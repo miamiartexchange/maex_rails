@@ -1,4 +1,9 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :artists
+
+  map.resources :galleries
+  map.root :galleries
+
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
