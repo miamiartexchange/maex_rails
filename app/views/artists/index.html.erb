@@ -1,0 +1,34 @@
+<h1>Listing artists</h1>
+
+<table>
+  <tr>
+    <th>First name</th>
+    <th>Middle name</th>
+    <th>Last name</th>
+    <th>Phone</th>
+    <th>Email</th>
+    <th>Bio</th>
+    <th>City</th>
+    <th>State</th>
+  </tr>
+
+<% @artists.each do |artist| %>
+  <tr>
+    <td><%=h artist.first_name %></td>
+    <td><%=h artist.middle_name %></td>
+    <td><%=h artist.last_name %></td>
+    <td><%=h artist.phone %></td>
+    <td><%=h artist.email %></td>
+    <td><%=h artist.bio %></td>
+    <td><%=h artist.city %></td>
+    <td><%=h artist.state %></td>
+    <td><%= link_to 'Show', artist %></td>
+    <td><%= link_to 'Edit', edit_artist_path(artist) %></td>
+    <td><%= link_to 'Destroy', artist, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New artist', new_artist_path %>

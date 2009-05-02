@@ -1,0 +1,43 @@
+<p>
+  <b>Name:</b>
+  <%=h @gallery.name %>
+</p>
+
+<p>
+  <b>Owner:</b>
+  <%=h @gallery.owner %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%=h @gallery.phone %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%=h @gallery.address %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%=h @gallery.city %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%=h @gallery.state %>
+</p>
+
+<p>
+  <b>Zip:</b>
+  <%=h @gallery.zip %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @gallery.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_gallery_path(@gallery) %> |
+<%= link_to 'Back', galleries_path %>

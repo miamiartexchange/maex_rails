@@ -1,0 +1,43 @@
+<p>
+  <b>First name:</b>
+  <%=h @artist.first_name %>
+</p>
+
+<p>
+  <b>Middle name:</b>
+  <%=h @artist.middle_name %>
+</p>
+
+<p>
+  <b>Last name:</b>
+  <%=h @artist.last_name %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%=h @artist.phone %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @artist.email %>
+</p>
+
+<p>
+  <b>Bio:</b>
+  <%=h @artist.bio %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%=h @artist.city %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%=h @artist.state %>
+</p>
+
+
+<%= link_to 'Edit', edit_artist_path(@artist) %> |
+<%= link_to 'Back', artists_path %>
