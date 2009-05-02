@@ -113,3 +113,71 @@ Migrating to CreateArtists (20090502195950)
 [0m
   [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("artists")[0m
   [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("galleries")[0m
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-02 16:01:58) [GET]
+  [4;36;1mGallery Load (0.8ms)[0m   [0;1mSELECT * FROM "galleries" [0m
+Rendering template within layouts/galleries
+Rendering galleries/index
+Completed in 52ms (View: 45, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing GalleriesController#new (for 127.0.0.1 at 2009-05-02 16:02:03) [GET]
+Rendering template within layouts/galleries
+Rendering galleries/new
+Completed in 16ms (View: 9, DB: 0) | 200 OK [http://localhost/galleries/new]
+
+
+Processing GalleriesController#new (for 127.0.0.1 at 2009-05-02 16:02:22) [GET]
+Rendering template within layouts/galleries
+Rendering galleries/new
+Completed in 51ms (View: 45, DB: 0) | 200 OK [http://localhost/galleries/new]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-02 16:02:27) [GET]
+  [4;35;1mGallery Load (0.7ms)[0m   [0mSELECT * FROM "galleries" [0m
+Rendering template within layouts/galleries
+Rendering galleries/index
+Completed in 9ms (View: 2, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-02 16:02:32) [GET]
+  [4;36;1mGallery Load (0.5ms)[0m   [0;1mSELECT * FROM "galleries" [0m
+Rendering template within layouts/galleries
+Rendering galleries/index
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/galleries]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-02 16:02:34) [GET]
+  [4;35;1mGallery Load (0.4ms)[0m   [0mSELECT * FROM "galleries" [0m
+Rendering template within layouts/galleries
+Rendering galleries/index
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/galleries]
+
+
+Processing GalleriesController#new (for 127.0.0.1 at 2009-05-02 16:02:36) [GET]
+Rendering template within layouts/galleries
+Rendering galleries/new
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/galleries/new]
+
+
+Processing GalleriesController#create (for 127.0.0.1 at 2009-05-02 16:02:53) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"XSTHK6ML7miEJW3kibsDa5lbrKLXW+Gn+4KEQRAa8BQ=", "gallery"=>{"city"=>"", "address"=>"address", "name"=>"name", "zip"=>"", "phone"=>"phone", "description"=>"", "state"=>"", "owner"=>"owner"}}
+  [4;36;1mGallery Create (0.6ms)[0m   [0;1mINSERT INTO "galleries" ("name", "address", "city", "zip", "created_at", "updated_at", "phone", "description", "owner", "state") VALUES('name', 'address', '', '', '2009-05-02 20:02:53', '2009-05-02 20:02:53', 'phone', '', 'owner', '')[0m
+Redirected to http://localhost:3000/galleries/1
+Completed in 44ms (DB: 1) | 302 Found [http://localhost/galleries]
+
+
+Processing GalleriesController#show (for 127.0.0.1 at 2009-05-02 16:02:53) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mGallery Load (0.4ms)[0m   [0mSELECT * FROM "galleries" WHERE ("galleries"."id" = 1) [0m
+Rendering template within layouts/galleries
+Rendering galleries/show
+Completed in 16ms (View: 8, DB: 0) | 200 OK [http://localhost/galleries/1]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-02 16:02:55) [GET]
+  [4;36;1mGallery Load (0.6ms)[0m   [0;1mSELECT * FROM "galleries" [0m
+Rendering template within layouts/galleries
+Rendering galleries/index
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/galleries]
