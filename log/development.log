@@ -1373,3 +1373,150 @@ Rendering template within layouts/application
 Rendering galleries/index
 Rendered layouts/_menu (0.1ms)
 Completed in 14ms (View: 8, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 18:11:14) [GET]
+  [4;35;1mGallery Load (1.0ms)[0m   [0mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 19ms (View: 11, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing GalleriesController#new (for 127.0.0.1 at 2009-05-27 18:11:42) [GET]
+Rendering template within layouts/application
+Rendering galleries/new
+Rendered layouts/_menu (0.1ms)
+Completed in 82ms (View: 76, DB: 0) | 200 OK [http://localhost/galleries/new]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 18:11:46) [GET]
+  [4;36;1mGallery Load (1.0ms)[0m   [0;1mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 14ms (View: 7, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 18:13:39) [GET]
+  [4;35;1mGallery Load (0.9ms)[0m   [0mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 18:13:53) [GET]
+  [4;36;1mGallery Load (0.8ms)[0m   [0;1mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 18:14:21) [GET]
+  [4;35;1mGallery Load (0.9ms)[0m   [0mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 16ms (View: 9, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 18:14:34) [GET]
+  [4;36;1mGallery Load (1.0ms)[0m   [0;1mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing ArtistsController#index (for 127.0.0.1 at 2009-05-27 18:14:40) [GET]
+  [4;35;1mArtist Load (0.8ms)[0m   [0mSELECT * FROM "artists" [0m
+Rendering template within layouts/application
+Rendering artists/index
+Rendered layouts/_menu (0.1ms)
+Completed in 17ms (View: 12, DB: 1) | 200 OK [http://localhost/artists]
+
+
+Processing ArtistsController#index (for 127.0.0.1 at 2009-05-27 18:14:56) [GET]
+  [4;36;1mArtist Load (0.6ms)[0m   [0;1mSELECT * FROM "artists" [0m
+Rendering template within layouts/application
+Rendering artists/index
+Rendered layouts/_menu (0.1ms)
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/artists]
+
+
+Processing ArtistsController#index (for 127.0.0.1 at 2009-05-27 18:15:31) [GET]
+  [4;35;1mArtist Load (0.6ms)[0m   [0mSELECT * FROM "artists" [0m
+Rendering template within layouts/application
+Rendering artists/index
+Rendered layouts/_menu (0.1ms)
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/artists]
+
+
+Processing ArtistsController#index (for 127.0.0.1 at 2009-05-27 18:15:49) [GET]
+  [4;36;1mArtist Load (0.7ms)[0m   [0;1mSELECT * FROM "artists" [0m
+Rendering template within layouts/application
+Rendering artists/index
+Rendered layouts/_menu (0.1ms)
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/artists]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 18:16:20) [GET]
+  [4;35;1mGallery Load (0.9ms)[0m   [0mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 14ms (View: 8, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing GalleriesController#show (for 127.0.0.1 at 2009-05-27 18:16:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mGallery Load (0.3ms)[0m   [0;1mSELECT * FROM "galleries" WHERE ("galleries"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering galleries/show
+Rendered layouts/_menu (0.1ms)
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://localhost/galleries/1]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 18:16:30) [GET]
+  [4;35;1mGallery Load (1.3ms)[0m   [0mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 14ms (View: 8, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing GalleriesController#show (for 127.0.0.1 at 2009-05-27 18:16:39) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mGallery Load (0.4ms)[0m   [0;1mSELECT * FROM "galleries" WHERE ("galleries"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering galleries/show
+Rendered layouts/_menu (0.1ms)
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/galleries/1]
+
+
+Processing GalleriesController#edit (for 127.0.0.1 at 2009-05-27 18:16:46) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mGallery Load (0.4ms)[0m   [0mSELECT * FROM "galleries" WHERE ("galleries"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering galleries/edit
+Rendered layouts/_menu (0.2ms)
+Completed in 22ms (View: 13, DB: 0) | 200 OK [http://localhost/galleries/1/edit]
+
+
+Processing GalleriesController#update (for 127.0.0.1 at 2009-05-27 18:19:39) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"JEthlcJMLn2cm/xbqSmtBNpetsd1oxXwXaQ9IbzCRbc=", "id"=>"1", "gallery"=>{"city"=>"Miami", "name"=>"Bernice Steinbaum Gallery", "zip"=>"33127", "description"=>"Work that is very narrative yet avante guard.", "phone"=>"305-756-2000", "owner"=>"Bernice Steinbaum", "address"=>"3071 North Miami Avenue", "state"=>"Florida"}}
+  [4;36;1mGallery Load (0.4ms)[0m   [0;1mSELECT * FROM "galleries" WHERE ("galleries"."id" = 1) [0m
+  [4;35;1mGallery Update (0.5ms)[0m   [0mUPDATE "galleries" SET "phone" = '305-756-2000', "zip" = '33127', "city" = 'Miami', "name" = 'Bernice Steinbaum Gallery', "state" = 'Florida', "description" = 'Work that is very narrative yet avante guard.', "address" = '3071 North Miami Avenue', "updated_at" = '2009-05-27 22:19:39', "owner" = 'Bernice Steinbaum' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/galleries/1
+Completed in 89ms (DB: 1) | 302 Found [http://localhost/galleries/1]
+
+
+Processing GalleriesController#show (for 127.0.0.1 at 2009-05-27 18:19:39) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mGallery Load (0.4ms)[0m   [0;1mSELECT * FROM "galleries" WHERE ("galleries"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering galleries/show
+Rendered layouts/_menu (0.1ms)
+Completed in 82ms (View: 75, DB: 0) | 200 OK [http://localhost/galleries/1]
