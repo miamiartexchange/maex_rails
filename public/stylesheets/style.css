@@ -241,7 +241,7 @@ text-decoration:none;
 	border-top: 1px solid #EEE;
 	font: normal 1em Verdana,sans-serif;
 	margin: 0 42% 0 3%;
-	padding: 8px 6px;
+	padding: 8px 6px
 }
 
 
@@ -308,4 +308,11 @@ width: 280px;
 }
 #commentform input{
 margin-bottom: 3px;
+}
+table{
+	width:100%;
+}
+tr{
+	border:1px solid black;
+	text-align:left;
 }
