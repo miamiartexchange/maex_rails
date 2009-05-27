@@ -1663,3 +1663,172 @@ Rendering template within layouts/application
 Rendering museums/show
 Rendered layouts/_menu (0.1ms)
 Completed in 10ms (View: 3, DB: 0) | 200 OK [http://localhost/museums/1]
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateGalleries (20090502195801)
+Migrating to CreateArtists (20090502195950)
+Migrating to CreateMuseums (20090527230147)
+Migrating to ChangeDescriptionToText (20090527233316)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateGalleries (20090502195801)
+Migrating to CreateArtists (20090502195950)
+Migrating to CreateMuseums (20090527230147)
+Migrating to ChangeDescriptionToText (20090527233316)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mCREATE TEMPORARY TABLE "altered_museums" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "address" varchar(255), "city" varchar(255), "county" varchar(255), "state" varchar(255), "zip" varchar(255), "phone" varchar(255), "description" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("museums")[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mDROP TABLE "museums"[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCREATE TABLE "museums" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "address" varchar(255), "city" varchar(255), "county" varchar(255), "state" varchar(255), "zip" varchar(255), "phone" varchar(255), "description" text(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("altered_museums")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDROP TABLE "altered_museums"[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090527233316')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("artists")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("galleries")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("museums")[0m
+
+
+Processing MuseumsController#show (for 127.0.0.1 at 2009-05-27 19:49:37) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMuseum Load (0.4ms)[0m   [0mSELECT * FROM "museums" WHERE ("museums"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering museums/show
+Rendered layouts/_menu (0.1ms)
+Completed in 10ms (View: 3, DB: 0) | 200 OK [http://localhost/museums/1]
+
+
+Processing MuseumsController#edit (for 127.0.0.1 at 2009-05-27 19:49:40) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMuseum Load (0.3ms)[0m   [0;1mSELECT * FROM "museums" WHERE ("museums"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering museums/edit
+Rendered layouts/_menu (0.1ms)
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://localhost/museums/1/edit]
+
+
+Processing MuseumsController#update (for 127.0.0.1 at 2009-05-27 19:49:50) [PUT]
+  Parameters: {"museum"=>{"city"=>"North Miami", "name"=>"Museum of Contemporary Art", "zip"=>"33161", "county"=>"Miami-Dade", "description"=>"Contemporary Art paul", "phone"=>"305-893-6211", "address"=>"770 NE 125th Street", "state"=>"Florida"}, "commit"=>"Update", "authenticity_token"=>"JEthlcJMLn2cm/xbqSmtBNpetsd1oxXwXaQ9IbzCRbc=", "id"=>"1"}
+  [4;35;1mMuseum Load (0.4ms)[0m   [0mSELECT * FROM "museums" WHERE ("museums"."id" = 1) [0m
+  [4;36;1mMuseum Update (0.7ms)[0m   [0;1mUPDATE "museums" SET "description" = 'Contemporary Art paul', "updated_at" = '2009-05-27 23:49:50' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/museums/1
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/museums/1]
+
+
+Processing MuseumsController#show (for 127.0.0.1 at 2009-05-27 19:49:50) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMuseum Load (0.4ms)[0m   [0mSELECT * FROM "museums" WHERE ("museums"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering museums/show
+Rendered layouts/_menu (0.1ms)
+Completed in 11ms (View: 4, DB: 0) | 200 OK [http://localhost/museums/1]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-05-27 19:49:54) [GET]
+  [4;36;1mMuseum Load (0.9ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Rendered layouts/_menu (0.1ms)
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/museums]
+
+
+Processing MuseumsController#new (for 127.0.0.1 at 2009-05-27 19:49:57) [GET]
+Rendering template within layouts/application
+Rendering museums/new
+Rendered layouts/_menu (0.1ms)
+Completed in 17ms (View: 9, DB: 0) | 200 OK [http://localhost/museums/new]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-05-27 19:50:52) [GET]
+  [4;35;1mMuseum Load (0.7ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Rendered layouts/_menu (0.1ms)
+Completed in 11ms (View: 7, DB: 1) | 200 OK [http://localhost/museums]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-05-27 19:51:53) [GET]
+  [4;36;1mMuseum Load (0.7ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Rendered layouts/_menu (0.1ms)
+Completed in 15ms (View: 10, DB: 1) | 200 OK [http://localhost/museums]
+
+
+Processing ArtistsController#index (for 127.0.0.1 at 2009-05-27 19:53:13) [GET]
+  [4;35;1mArtist Load (0.7ms)[0m   [0mSELECT * FROM "artists" [0m
+Rendering template within layouts/application
+Rendering artists/index
+Rendered layouts/_menu (0.1ms)
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/artists]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 19:53:15) [GET]
+  [4;36;1mGallery Load (0.9ms)[0m   [0;1mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-05-27 19:53:18) [GET]
+  [4;35;1mMuseum Load (0.9ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Rendered layouts/_menu (0.1ms)
+Completed in 14ms (View: 7, DB: 1) | 200 OK [http://localhost/museums]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 19:53:22) [GET]
+  [4;36;1mGallery Load (1.0ms)[0m   [0;1mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 13ms (View: 7, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing ArtistsController#index (for 127.0.0.1 at 2009-05-27 19:53:27) [GET]
+  [4;35;1mArtist Load (0.6ms)[0m   [0mSELECT * FROM "artists" [0m
+Rendering template within layouts/application
+Rendering artists/index
+Rendered layouts/_menu (0.1ms)
+Completed in 10ms (View: 6, DB: 1) | 200 OK [http://localhost/artists]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 19:53:30) [GET]
+  [4;36;1mGallery Load (1.0ms)[0m   [0;1mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing ArtistsController#index (for 127.0.0.1 at 2009-05-27 19:53:32) [GET]
+  [4;35;1mArtist Load (0.7ms)[0m   [0mSELECT * FROM "artists" [0m
+Rendering template within layouts/application
+Rendering artists/index
+Rendered layouts/_menu (0.1ms)
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/artists]
+
+
+Processing ArtistsController#index (for 127.0.0.1 at 2009-05-27 19:53:55) [GET]
+  [4;36;1mArtist Load (0.6ms)[0m   [0;1mSELECT * FROM "artists" [0m
+Rendering template within layouts/application
+Rendering artists/index
+Rendered layouts/_menu (0.1ms)
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/artists]
