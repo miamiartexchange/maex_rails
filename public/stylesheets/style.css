@@ -23,7 +23,7 @@ border:none;
 }
 
 body {
-	background: #FFF url('img/bg.gif') repeat-x;
+	background: #FFF url('../images/bg.gif') repeat-x;
 	color: #444;
 	font: normal 62.5% "Lucida Sans Unicode",Verdana,sans-serif;
 	padding-top: 40px;
@@ -39,7 +39,7 @@ h1 {
 	font-size: 1.4em;
 }
 code {
-	background: url('img/bgcode.gif');
+	background: url('../images/bgcode.gif');
 	border: 1px solid #F0F0F0;
 	border-left: 6px solid #F06;	
 	color: #444;
@@ -70,7 +70,7 @@ h1,h2,h3,h4 {
 
 /* header */
 .header {
-	background: url('img/stripes.gif') no-repeat;
+	background: url('../images/stripes.gif') no-repeat;
 	border-bottom: 1px solid #EEE;
 	height: 160px;
 	margin-bottom: 24px;
@@ -119,7 +119,7 @@ text-decoration:none;
 }
 
 .content li {
-	list-style: url('img/li.gif');
+	list-style: url('../images/li.gif');
 	margin-left: 18px;
 }
 .content h1 {
@@ -149,7 +149,7 @@ text-decoration:none;
 	width: 17%;
 }
 .nav .logo {
-	background: url('img/logo.gif') no-repeat center top;
+	background: url('../images/logo.gif') no-repeat center top;
 	border-bottom: 1px solid #EEE;
 	border-top: 1px solid #EEE;
 	height: 159px;	
@@ -215,7 +215,7 @@ text-decoration:none;
 
 /* round edges */
 .roundtl,.roundtr,.roundbl,.roundbr {
-	background: url('img/round.gif');
+	background: url('../images/round.gif');
 	height: 16px;
 	width: 14px;
 }

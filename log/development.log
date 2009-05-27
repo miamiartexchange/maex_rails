@@ -1111,3 +1111,265 @@ Rendering template within layouts/application
 Rendering galleries/show
 Rendered layouts/_menu (0.1ms)
 Completed in 19ms (View: 10, DB: 0) | 200 OK [http://localhost/galleries/2]
+
+
+Processing GalleriesController#show (for 127.0.0.1 at 2009-05-27 17:19:41) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mGallery Load (0.4ms)[0m   [0;1mSELECT * FROM "galleries" WHERE ("galleries"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering galleries/show
+Rendered layouts/_menu (0.1ms)
+Completed in 77ms (View: 69, DB: 0) | 200 OK [http://localhost/galleries/2]
+
+
+Processing GalleriesController#show (for 127.0.0.1 at 2009-05-27 17:23:56) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mGallery Load (0.4ms)[0m   [0mSELECT * FROM "galleries" WHERE ("galleries"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering galleries/show
+Rendered layouts/_menu (0.1ms)
+Completed in 18ms (View: 11, DB: 0) | 200 OK [http://localhost/galleries/2]
+
+
+Processing GalleriesController#show (for 127.0.0.1 at 2009-05-27 17:27:07) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mGallery Load (0.4ms)[0m   [0;1mSELECT * FROM "galleries" WHERE ("galleries"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering galleries/show
+Rendered layouts/_menu (0.1ms)
+Completed in 18ms (View: 10, DB: 0) | 200 OK [http://localhost/galleries/2]
+
+
+Processing GalleriesController#show (for 127.0.0.1 at 2009-05-27 17:28:01) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mGallery Load (0.8ms)[0m   [0mSELECT * FROM "galleries" WHERE ("galleries"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering galleries/show
+Rendered layouts/_menu (0.1ms)
+Completed in 17ms (View: 8, DB: 1) | 200 OK [http://localhost/galleries/2]
+
+
+Processing GalleriesController#show (for 127.0.0.1 at 2009-05-27 17:30:21) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mGallery Load (0.3ms)[0m   [0;1mSELECT * FROM "galleries" WHERE ("galleries"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering galleries/show
+Rendered layouts/_menu (0.1ms)
+Completed in 13ms (View: 6, DB: 0) | 200 OK [http://localhost/galleries/2]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 17:30:31) [GET]
+  [4;35;1mGallery Load (0.9ms)[0m   [0mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 16ms (View: 11, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing GalleriesController#show (for 127.0.0.1 at 2009-05-27 17:30:36) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mGallery Load (0.3ms)[0m   [0;1mSELECT * FROM "galleries" WHERE ("galleries"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering galleries/show
+Rendered layouts/_menu (0.1ms)
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/galleries/2]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 17:30:50) [GET]
+  [4;35;1mGallery Load (1.0ms)[0m   [0mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 17:34:36) [GET]
+  [4;36;1mGallery Load (0.9ms)[0m   [0;1mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 29ms (View: 23, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-27 17:34:37) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-27 17:34:37) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/stripes.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-27 17:34:37) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/logo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-27 17:34:37) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/round.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 17:38:13) [GET]
+  [4;35;1mGallery Load (0.9ms)[0m   [0mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 13ms (View: 7, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-27 17:38:14) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-27 17:38:14) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/stripes.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-27 17:38:14) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/logo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-27 17:38:14) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/round.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 17:38:41) [GET]
+  [4;36;1mGallery Load (1.6ms)[0m   [0;1mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 21ms (View: 14, DB: 2) | 200 OK [http://localhost/galleries]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-27 17:38:41) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-27 17:38:41) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/stripes.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-27 17:38:41) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/logo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-27 17:38:41) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/round.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-27 17:42:35) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/bg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-27 17:42:35) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/stripes.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-27 17:42:35) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/logo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-27 17:42:35) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/round.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 17:43:40) [GET]
+  [4;35;1mGallery Load (1.7ms)[0m   [0mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 13ms (View: 7, DB: 2) | 200 OK [http://localhost/galleries]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-27 17:43:40) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/stripes.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-27 17:43:40) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/logo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-27 17:43:40) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/round.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 17:44:38) [GET]
+  [4;36;1mGallery Load (0.9ms)[0m   [0;1mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 14ms (View: 8, DB: 1) | 200 OK [http://localhost/galleries]
