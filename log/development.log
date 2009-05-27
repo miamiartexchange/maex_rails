@@ -1520,3 +1520,146 @@ Rendering template within layouts/application
 Rendering galleries/show
 Rendered layouts/_menu (0.1ms)
 Completed in 82ms (View: 75, DB: 0) | 200 OK [http://localhost/galleries/1]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 18:44:58) [GET]
+  [4;35;1mGallery Load (1.1ms)[0m   [0mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 13ms (View: 7, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 18:49:09) [GET]
+  [4;36;1mGallery Load (0.9ms)[0m   [0;1mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (1.0ms)
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 18:49:15) [GET]
+  [4;35;1mGallery Load (0.9ms)[0m   [0mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 18:49:19) [GET]
+  [4;36;1mGallery Load (0.9ms)[0m   [0;1mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 14ms (View: 8, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 18:49:26) [GET]
+  [4;35;1mGallery Load (0.9ms)[0m   [0mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 13ms (View: 7, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 18:49:34) [GET]
+  [4;36;1mGallery Load (0.9ms)[0m   [0;1mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 19:03:27) [GET]
+  [4;35;1mGallery Load (0.9ms)[0m   [0mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.2ms)
+Completed in 78ms (View: 73, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 19:03:32) [GET]
+  [4;36;1mGallery Load (1.0ms)[0m   [0;1mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 19:04:15) [GET]
+  [4;35;1mGallery Load (0.9ms)[0m   [0mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (1.0ms)
+Completed in 16ms (View: 11, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-05-27 19:04:19) [GET]
+  [4;36;1mMuseum Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: museums: SELECT * FROM "museums" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: museums: SELECT * FROM "museums" ):
+  app/controllers/museums_controller.rb:5:in `index'
+
+Rendered rescues/_trace (40.2ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateGalleries (20090502195801)
+Migrating to CreateArtists (20090502195950)
+Migrating to CreateMuseums (20090527230147)
+  [4;36;1mSQL (20.9ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mCREATE TABLE "museums" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "address" varchar(255), "city" varchar(255), "county" varchar(255), "state" varchar(255), "zip" varchar(255), "phone" varchar(255), "description" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090527230147')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("artists")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("galleries")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("museums")[0m
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-05-27 19:06:57) [GET]
+  [4;35;1mMuseum Load (0.4ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/museums
+Rendering museums/index
+Completed in 76ms (View: 71, DB: 0) | 200 OK [http://localhost/museums]
+
+
+Processing MuseumsController#new (for 127.0.0.1 at 2009-05-27 19:07:08) [GET]
+Rendering template within layouts/museums
+Rendering museums/new
+Completed in 18ms (View: 12, DB: 0) | 200 OK [http://localhost/museums/new]
+
+
+Processing MuseumsController#create (for 127.0.0.1 at 2009-05-27 19:09:10) [POST]
+  Parameters: {"museum"=>{"city"=>"North Miami", "name"=>"Museum of Contemporary Art", "zip"=>"33161", "county"=>"Miami-Dade", "description"=>"Contemporary Art", "phone"=>"305-893-6211", "address"=>"770 NE 125th Street", "state"=>"Florida"}, "commit"=>"Create", "authenticity_token"=>"JEthlcJMLn2cm/xbqSmtBNpetsd1oxXwXaQ9IbzCRbc="}
+  [4;36;1mMuseum Create (0.4ms)[0m   [0;1mINSERT INTO "museums" ("name", "city", "zip", "updated_at", "county", "description", "phone", "address", "state", "created_at") VALUES('Museum of Contemporary Art', 'North Miami', '33161', '2009-05-27 23:09:10', 'Miami-Dade', 'Contemporary Art', '305-893-6211', '770 NE 125th Street', 'Florida', '2009-05-27 23:09:10')[0m
+Redirected to http://localhost:3000/museums/1
+Completed in 12ms (DB: 0) | 302 Found [http://localhost/museums]
+
+
+Processing MuseumsController#show (for 127.0.0.1 at 2009-05-27 19:09:10) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMuseum Load (0.3ms)[0m   [0mSELECT * FROM "museums" WHERE ("museums"."id" = 1) [0m
+Rendering template within layouts/museums
+Rendering museums/show
+Completed in 13ms (View: 6, DB: 0) | 200 OK [http://localhost/museums/1]
+
+
+Processing MuseumsController#show (for 127.0.0.1 at 2009-05-27 19:10:22) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMuseum Load (0.3ms)[0m   [0;1mSELECT * FROM "museums" WHERE ("museums"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering museums/show
+Rendered layouts/_menu (0.1ms)
+Completed in 10ms (View: 3, DB: 0) | 200 OK [http://localhost/museums/1]
