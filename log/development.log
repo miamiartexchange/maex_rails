@@ -181,3 +181,933 @@ Processing GalleriesController#index (for 127.0.0.1 at 2009-05-02 16:02:55) [GET
 Rendering template within layouts/galleries
 Rendering galleries/index
 Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 15:43:00) [GET]
+  [4;36;1mGallery Load (0.7ms)[0m   [0;1mSELECT * FROM "galleries" [0m
+Rendering template within layouts/galleries
+Rendering galleries/index
+Completed in 66ms (View: 61, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing GalleriesController#new (for 127.0.0.1 at 2009-05-27 15:43:17) [GET]
+Rendering template within layouts/galleries
+Rendering galleries/new
+Completed in 16ms (View: 9, DB: 0) | 200 OK [http://localhost/galleries/new]
+
+
+Processing GalleriesController#create (for 127.0.0.1 at 2009-05-27 15:43:47) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"JEthlcJMLn2cm/xbqSmtBNpetsd1oxXwXaQ9IbzCRbc=", "gallery"=>{"city"=>"miami", "name"=>"Paul Kruger", "zip"=>"33132", "description"=>"hi this is my description of the gallery", "phone"=>"561-213-3854", "owner"=>"john", "address"=>"123 home st", "state"=>"florida"}}
+  [4;35;1mGallery Create (1.0ms)[0m   [0mINSERT INTO "galleries" ("name", "city", "zip", "updated_at", "description", "phone", "owner", "address", "state", "created_at") VALUES('Paul Kruger', 'miami', '33132', '2009-05-27 19:43:47', 'hi this is my description of the gallery', '561-213-3854', 'john', '123 home st', 'florida', '2009-05-27 19:43:47')[0m
+Redirected to http://localhost:3000/galleries/2
+Completed in 101ms (DB: 1) | 302 Found [http://localhost/galleries]
+
+
+Processing GalleriesController#show (for 127.0.0.1 at 2009-05-27 15:43:48) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mGallery Load (0.3ms)[0m   [0;1mSELECT * FROM "galleries" WHERE ("galleries"."id" = 2) [0m
+Rendering template within layouts/galleries
+Rendering galleries/show
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/galleries/2]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 15:43:51) [GET]
+  [4;35;1mGallery Load (0.9ms)[0m   [0mSELECT * FROM "galleries" [0m
+Rendering template within layouts/galleries
+Rendering galleries/index
+Completed in 66ms (View: 61, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 15:49:45) [GET]
+  [4;36;1mGallery Load (1.0ms)[0m   [0;1mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Completed in 19ms (View: 13, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 15:53:42) [GET]
+  [4;35;1mGallery Load (0.8ms)[0m   [0mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+
+ActionView::TemplateError (Missing template galleries/_menu.erb in view path app/views) on line #13 of app/views/layouts/application.html.erb:
+10: <body>
+11: 
+12: <p style="color: green"><%= flash[:notice] %></p>
+13: <%= render :partial => "menu" %>
+14: 
+15: <%= yield %>
+16: 
+
+    app/views/layouts/application.html.erb:13
+    app/controllers/galleries_controller.rb:7:in `index'
+
+Rendered rescues/_trace (109.9ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 15:54:23) [GET]
+  [4;36;1mGallery Load (0.8ms)[0m   [0;1mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+
+ActionView::TemplateError (Missing layout layouts/_menu.erb in view path app/views) on line #13 of app/views/layouts/application.html.erb:
+10: <body>
+11: 
+12: <p style="color: green"><%= flash[:notice] %></p>
+13: <%= render :partial => "layouts/menu" %>
+14: 
+15: <%= yield %>
+16: 
+
+    app/views/layouts/application.html.erb:13
+    app/controllers/galleries_controller.rb:7:in `index'
+
+Rendered rescues/_trace (107.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 15:54:55) [GET]
+  [4;35;1mGallery Load (0.7ms)[0m   [0mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.4ms)
+Completed in 15ms (View: 11, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 15:55:50) [GET]
+  [4;36;1mGallery Load (0.7ms)[0m   [0;1mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.4ms)
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-27 15:55:52) [GET]
+
+ActionController::RoutingError (No route matches "/artist" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-27 15:56:00) [GET]
+
+ActionController::RoutingError (No route matches "/artist" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 15:56:03) [GET]
+  [4;35;1mGallery Load (0.8ms)[0m   [0mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.4ms)
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing ArtistsController#index (for 127.0.0.1 at 2009-05-27 15:56:05) [GET]
+  [4;36;1mArtist Load (0.4ms)[0m   [0;1mSELECT * FROM "artists" [0m
+Rendering template within layouts/application
+Rendering artists/index
+Rendered layouts/_menu (0.1ms)
+Completed in 21ms (View: 14, DB: 0) | 200 OK [http://localhost/artists]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 15:56:07) [GET]
+  [4;35;1mGallery Load (0.8ms)[0m   [0mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 13ms (View: 8, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing ArtistsController#index (for 127.0.0.1 at 2009-05-27 15:56:09) [GET]
+  [4;36;1mArtist Load (0.4ms)[0m   [0;1mSELECT * FROM "artists" [0m
+Rendering template within layouts/application
+Rendering artists/index
+Rendered layouts/_menu (0.1ms)
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/artists]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 15:56:10) [GET]
+  [4;35;1mGallery Load (0.8ms)[0m   [0mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 13ms (View: 8, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing ArtistsController#index (for 127.0.0.1 at 2009-05-27 15:56:11) [GET]
+  [4;36;1mArtist Load (0.4ms)[0m   [0;1mSELECT * FROM "artists" [0m
+Rendering template within layouts/application
+Rendering artists/index
+Rendered layouts/_menu (0.1ms)
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/artists]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 15:56:12) [GET]
+  [4;35;1mGallery Load (0.7ms)[0m   [0mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing ArtistsController#index (for 127.0.0.1 at 2009-05-27 15:56:13) [GET]
+  [4;36;1mArtist Load (0.4ms)[0m   [0;1mSELECT * FROM "artists" [0m
+Rendering template within layouts/application
+Rendering artists/index
+Rendered layouts/_menu (0.1ms)
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/artists]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 15:56:15) [GET]
+  [4;35;1mGallery Load (0.9ms)[0m   [0mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing ArtistsController#index (for 127.0.0.1 at 2009-05-27 15:56:17) [GET]
+  [4;36;1mArtist Load (0.6ms)[0m   [0;1mSELECT * FROM "artists" [0m
+Rendering template within layouts/application
+Rendering artists/index
+Rendered layouts/_menu (0.1ms)
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://localhost/artists]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 15:56:18) [GET]
+  [4;35;1mGallery Load (1.1ms)[0m   [0mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 13ms (View: 6, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing ArtistsController#index (for 127.0.0.1 at 2009-05-27 15:56:43) [GET]
+  [4;36;1mArtist Load (0.4ms)[0m   [0;1mSELECT * FROM "artists" [0m
+Rendering template within layouts/application
+Rendering artists/index
+Rendered layouts/_menu (0.1ms)
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/artists]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 15:56:45) [GET]
+  [4;35;1mGallery Load (0.7ms)[0m   [0mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 11ms (View: 7, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 15:57:51) [GET]
+  [4;36;1mGallery Load (0.7ms)[0m   [0;1mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 15:58:33) [GET]
+  [4;35;1mGallery Load (0.8ms)[0m   [0mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 15ms (View: 10, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing GalleriesController#show (for 127.0.0.1 at 2009-05-27 15:59:00) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mGallery Load (0.3ms)[0m   [0;1mSELECT * FROM "galleries" WHERE ("galleries"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering galleries/show
+Rendered layouts/_menu (0.1ms)
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/galleries/2]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 15:59:02) [GET]
+  [4;35;1mGallery Load (0.9ms)[0m   [0mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 15:59:46) [GET]
+  [4;36;1mGallery Load (0.8ms)[0m   [0;1mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing ArtistsController#index (for 127.0.0.1 at 2009-05-27 15:59:57) [GET]
+  [4;35;1mArtist Load (0.5ms)[0m   [0mSELECT * FROM "artists" [0m
+Rendering template within layouts/application
+Rendering artists/index
+Rendered layouts/_menu (0.1ms)
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/artists]
+
+
+Processing ArtistsController#new (for 127.0.0.1 at 2009-05-27 16:00:00) [GET]
+Rendering template within layouts/application
+Rendering artists/new
+Rendered layouts/_menu (0.1ms)
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/artists/new]
+
+
+Processing ArtistsController#create (for 127.0.0.1 at 2009-05-27 16:00:43) [POST]
+  Parameters: {"artist"=>{"city"=>"miami", "phone"=>"555-222-2343", "bio"=>"photographer in miami", "first_name"=>"Onajide", "last_name"=>"", "state"=>"fl", "email"=>"editor@miamiartexchange.com", "middle_name"=>""}, "commit"=>"Create", "authenticity_token"=>"JEthlcJMLn2cm/xbqSmtBNpetsd1oxXwXaQ9IbzCRbc="}
+  [4;36;1mArtist Create (0.4ms)[0m   [0;1mINSERT INTO "artists" ("city", "updated_at", "phone", "first_name", "bio", "last_name", "middle_name", "email", "state", "created_at") VALUES('miami', '2009-05-27 20:00:43', '555-222-2343', 'Onajide', 'photographer in miami', '', '', 'editor@miamiartexchange.com', 'fl', '2009-05-27 20:00:43')[0m
+Redirected to http://localhost:3000/artists/1
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/artists]
+
+
+Processing ArtistsController#show (for 127.0.0.1 at 2009-05-27 16:00:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mArtist Load (0.3ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering artists/show
+Rendered layouts/_menu (0.1ms)
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/artists/1]
+
+
+Processing ArtistsController#index (for 127.0.0.1 at 2009-05-27 16:00:47) [GET]
+  [4;36;1mArtist Load (0.6ms)[0m   [0;1mSELECT * FROM "artists" [0m
+Rendering template within layouts/application
+Rendering artists/index
+Rendered layouts/_menu (0.1ms)
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/artists]
+
+
+Processing ArtistsController#index (for 127.0.0.1 at 2009-05-27 16:22:55) [GET]
+  [4;35;1mArtist Load (0.7ms)[0m   [0mSELECT * FROM "artists" [0m
+Rendering template within layouts/application
+Rendering artists/index
+Completed in 121ms (View: 116, DB: 1) | 200 OK [http://localhost/artists]
+
+
+Processing ArtistsController#index (for 127.0.0.1 at 2009-05-27 16:28:42) [GET]
+  [4;36;1mArtist Load (0.7ms)[0m   [0;1mSELECT * FROM "artists" [0m
+Rendering template within layouts/application
+Rendering artists/index
+Completed in 38ms (View: 33, DB: 1) | 200 OK [http://localhost/artists]
+
+
+Processing ArtistsController#index (for 127.0.0.1 at 2009-05-27 16:31:56) [GET]
+  [4;35;1mArtist Load (0.6ms)[0m   [0mSELECT * FROM "artists" [0m
+Rendering template within layouts/application
+Rendering artists/index
+Completed in 30ms (View: 25, DB: 1) | 200 OK [http://localhost/artists]
+
+
+Processing ArtistsController#index (for 127.0.0.1 at 2009-05-27 16:39:16) [GET]
+  [4;36;1mArtist Load (0.6ms)[0m   [0;1mSELECT * FROM "artists" [0m
+Rendering template within layouts/application
+Rendering artists/index
+Rendered layouts/_menu (0.9ms)
+Completed in 34ms (View: 29, DB: 1) | 200 OK [http://localhost/artists]
+
+
+Processing ArtistsController#index (for 127.0.0.1 at 2009-05-27 16:40:32) [GET]
+  [4;35;1mArtist Load (0.6ms)[0m   [0mSELECT * FROM "artists" [0m
+Rendering template within layouts/application
+Rendering artists/index
+Rendered layouts/_menu (1.1ms)
+Completed in 65ms (View: 60, DB: 1) | 200 OK [http://localhost/artists]
+
+
+Processing ArtistsController#index (for 127.0.0.1 at 2009-05-27 16:40:35) [GET]
+  [4;36;1mArtist Load (0.7ms)[0m   [0;1mSELECT * FROM "artists" [0m
+Rendering template within layouts/application
+Rendering artists/index
+Rendered layouts/_menu (0.2ms)
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/artists]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 16:40:38) [GET]
+  [4;35;1mGallery Load (0.7ms)[0m   [0mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 13ms (View: 8, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing ArtistsController#index (for 127.0.0.1 at 2009-05-27 16:40:40) [GET]
+  [4;36;1mArtist Load (0.7ms)[0m   [0;1mSELECT * FROM "artists" [0m
+Rendering template within layouts/application
+Rendering artists/index
+Rendered layouts/_menu (0.1ms)
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/artists]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 16:40:42) [GET]
+  [4;35;1mGallery Load (0.9ms)[0m   [0mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 14ms (View: 7, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 16:40:54) [GET]
+  [4;36;1mGallery Load (0.7ms)[0m   [0;1mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (1.1ms)
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 16:42:07) [GET]
+  [4;35;1mGallery Load (0.7ms)[0m   [0mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 21ms (View: 16, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 16:42:50) [GET]
+  [4;36;1mGallery Load (0.7ms)[0m   [0;1mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 30ms (View: 24, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 16:44:25) [GET]
+  [4;35;1mGallery Load (0.7ms)[0m   [0mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.2ms)
+Completed in 82ms (View: 78, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 16:45:01) [GET]
+  [4;36;1mGallery Load (0.9ms)[0m   [0;1mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 35ms (View: 29, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 16:45:25) [GET]
+  [4;35;1mGallery Load (0.8ms)[0m   [0mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 28ms (View: 22, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ArtistsController#index (for 127.0.0.1 at 2009-05-27 16:45:38) [GET]
+  [4;36;1mArtist Load (0.6ms)[0m   [0;1mSELECT * FROM "artists" [0m
+Rendering template within layouts/application
+Rendering artists/index
+Rendered layouts/_menu (0.1ms)
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/artists]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 16:45:41) [GET]
+  [4;35;1mGallery Load (0.9ms)[0m   [0mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 15ms (View: 8, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing ArtistsController#index (for 127.0.0.1 at 2009-05-27 16:45:43) [GET]
+  [4;36;1mArtist Load (0.6ms)[0m   [0;1mSELECT * FROM "artists" [0m
+Rendering template within layouts/application
+Rendering artists/index
+Rendered layouts/_menu (0.1ms)
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/artists]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 16:45:44) [GET]
+  [4;35;1mGallery Load (0.8ms)[0m   [0mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing GalleriesController#new (for 127.0.0.1 at 2009-05-27 16:45:52) [GET]
+Rendering template within layouts/application
+Rendering galleries/new
+Rendered layouts/_menu (0.1ms)
+Completed in 73ms (View: 67, DB: 0) | 200 OK [http://localhost/galleries/new]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 16:46:01) [GET]
+  [4;36;1mGallery Load (0.8ms)[0m   [0;1mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 16:47:01) [GET]
+  [4;35;1mGallery Load (0.7ms)[0m   [0mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 27ms (View: 22, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing GalleriesController#new (for 127.0.0.1 at 2009-05-27 16:47:03) [GET]
+Rendering template within layouts/application
+Rendering galleries/new
+Rendered layouts/_menu (0.1ms)
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/galleries/new]
+
+
+Processing GalleriesController#create (for 127.0.0.1 at 2009-05-27 16:47:06) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"JEthlcJMLn2cm/xbqSmtBNpetsd1oxXwXaQ9IbzCRbc=", "gallery"=>{"city"=>"", "name"=>"", "zip"=>"", "description"=>"", "phone"=>"", "owner"=>"", "address"=>"", "state"=>""}}
+  [4;36;1mGallery Create (0.7ms)[0m   [0;1mINSERT INTO "galleries" ("name", "city", "zip", "updated_at", "description", "phone", "owner", "address", "state", "created_at") VALUES('', '', '', '2009-05-27 20:47:06', '', '', '', '', '', '2009-05-27 20:47:06')[0m
+Redirected to http://localhost:3000/galleries/3
+Completed in 14ms (DB: 1) | 302 Found [http://localhost/galleries]
+
+
+Processing GalleriesController#show (for 127.0.0.1 at 2009-05-27 16:47:06) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mGallery Load (0.3ms)[0m   [0mSELECT * FROM "galleries" WHERE ("galleries"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering galleries/show
+Rendered layouts/_menu (0.1ms)
+Completed in 10ms (View: 3, DB: 0) | 200 OK [http://localhost/galleries/3]
+
+
+Processing GalleriesController#edit (for 127.0.0.1 at 2009-05-27 16:48:26) [GET]
+  Parameters: {"id"=>"3"}
+
+SyntaxError (/Users/pkruger/Sites/github.com/miamiphp/maex_rails/app/models/gallery.rb:2: syntax error, unexpected ':', expecting kEND
+  validates_presence_of :name :phone :address :city :state :zip :owner :description
+                               ^
+/Users/pkruger/Sites/github.com/miamiphp/maex_rails/app/models/gallery.rb:2: syntax error, unexpected ':', expecting kEND
+  validates_presence_of :name :phone :address :city :state :zip :owner :description
+                                               ^
+/Users/pkruger/Sites/github.com/miamiphp/maex_rails/app/models/gallery.rb:2: syntax error, unexpected ':', expecting kEND
+  validates_presence_of :name :phone :address :city :state :zip :owner :description
+                                                            ^
+/Users/pkruger/Sites/github.com/miamiphp/maex_rails/app/models/gallery.rb:2: syntax error, unexpected ':', expecting kEND
+  validates_presence_of :name :phone :address :city :state :zip :owner :description
+                                                                        ^):
+  app/controllers/galleries_controller.rb:37:in `edit'
+
+Rendered rescues/_trace (105.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GalleriesController#edit (for 127.0.0.1 at 2009-05-27 16:48:48) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mGallery Load (0.4ms)[0m   [0;1mSELECT * FROM "galleries" WHERE ("galleries"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering galleries/edit
+Rendered layouts/_menu (0.1ms)
+Completed in 33ms (View: 25, DB: 0) | 200 OK [http://localhost/galleries/3/edit]
+
+
+Processing GalleriesController#update (for 127.0.0.1 at 2009-05-27 16:48:52) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"JEthlcJMLn2cm/xbqSmtBNpetsd1oxXwXaQ9IbzCRbc=", "id"=>"3", "gallery"=>{"city"=>"", "name"=>"", "zip"=>"", "description"=>"", "phone"=>"", "owner"=>"", "address"=>"", "state"=>""}}
+  [4;35;1mGallery Load (0.4ms)[0m   [0mSELECT * FROM "galleries" WHERE ("galleries"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering galleries/edit
+Rendered layouts/_menu (0.1ms)
+Completed in 25ms (View: 6, DB: 0) | 200 OK [http://localhost/galleries/3]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 16:49:30) [GET]
+  [4;36;1mGallery Load (0.9ms)[0m   [0;1mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 13ms (View: 7, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing GalleriesController#show (for 127.0.0.1 at 2009-05-27 16:49:38) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mGallery Load (0.3ms)[0m   [0mSELECT * FROM "galleries" WHERE ("galleries"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering galleries/show
+Rendered layouts/_menu (0.1ms)
+Completed in 10ms (View: 3, DB: 0) | 200 OK [http://localhost/galleries/2]
+
+
+Processing GalleriesController#edit (for 127.0.0.1 at 2009-05-27 16:49:42) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mGallery Load (0.3ms)[0m   [0;1mSELECT * FROM "galleries" WHERE ("galleries"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering galleries/edit
+Rendered layouts/_menu (0.1ms)
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/galleries/2/edit]
+
+
+Processing GalleriesController#update (for 127.0.0.1 at 2009-05-27 16:51:26) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"JEthlcJMLn2cm/xbqSmtBNpetsd1oxXwXaQ9IbzCRbc=", "id"=>"2", "gallery"=>{"city"=>"miami", "name"=>"Art Fusion", "zip"=>"33137", "description"=>"Art Fusion is a vanity gallery.", "phone"=>"305-333-1962", "owner"=>"John Marcos", "address"=>"110 NE 40th ST", "state"=>"florida"}}
+  [4;35;1mGallery Load (0.3ms)[0m   [0mSELECT * FROM "galleries" WHERE ("galleries"."id" = 2) [0m
+  [4;36;1mGallery Update (0.4ms)[0m   [0;1mUPDATE "galleries" SET "phone" = '305-333-1962', "zip" = '33137', "name" = 'Art Fusion', "description" = 'Art Fusion is a vanity gallery.', "address" = '110 NE 40th ST', "updated_at" = '2009-05-27 20:51:26', "owner" = 'John Marcos' WHERE "id" = 2[0m
+Redirected to http://localhost:3000/galleries/2
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/galleries/2]
+
+
+Processing GalleriesController#show (for 127.0.0.1 at 2009-05-27 16:51:26) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mGallery Load (0.3ms)[0m   [0mSELECT * FROM "galleries" WHERE ("galleries"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering galleries/show
+Rendered layouts/_menu (0.1ms)
+Completed in 10ms (View: 3, DB: 0) | 200 OK [http://localhost/galleries/2]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 16:51:32) [GET]
+  [4;36;1mGallery Load (1.0ms)[0m   [0;1mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 13ms (View: 7, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing GalleriesController#show (for 127.0.0.1 at 2009-05-27 16:51:44) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mGallery Load (0.3ms)[0m   [0mSELECT * FROM "galleries" WHERE ("galleries"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering galleries/show
+Rendered layouts/_menu (0.1ms)
+Completed in 76ms (View: 69, DB: 0) | 200 OK [http://localhost/galleries/2]
+
+
+Processing GalleriesController#show (for 127.0.0.1 at 2009-05-27 16:52:27) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mGallery Load (0.6ms)[0m   [0;1mSELECT * FROM "galleries" WHERE ("galleries"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering galleries/show
+Rendered layouts/_menu (0.1ms)
+Completed in 19ms (View: 11, DB: 1) | 200 OK [http://localhost/galleries/2]
+
+
+Processing GalleriesController#show (for 127.0.0.1 at 2009-05-27 16:53:30) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mGallery Load (0.5ms)[0m   [0mSELECT * FROM "galleries" WHERE ("galleries"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering galleries/show
+Rendered layouts/_menu (0.1ms)
+Completed in 21ms (View: 12, DB: 0) | 200 OK [http://localhost/galleries/2]
+
+
+Processing GalleriesController#show (for 127.0.0.1 at 2009-05-27 16:54:20) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mGallery Load (0.3ms)[0m   [0;1mSELECT * FROM "galleries" WHERE ("galleries"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering galleries/show
+
+ActionView::TemplateError (undefined method `created_on' for #<Gallery:0x242361c>) on line #5 of app/views/galleries/show.html.erb:
+2: 
+3: 	<h1><a href="#" rel="bookmark" title="<%=h @gallery.name %>"><%=h @gallery.name %></a></h1>
+4: 
+5: 	<div class="descr"> <%=h @gallery.created_on %> old = May 27th, 2009 by Editor </div>
+6: 
+7: 	<div class="entry">
+8: 
+
+    app/views/galleries/show.html.erb:5
+    app/controllers/galleries_controller.rb:18:in `show'
+
+Rendered rescues/_trace (100.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GalleriesController#show (for 127.0.0.1 at 2009-05-27 16:54:32) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mGallery Load (0.4ms)[0m   [0mSELECT * FROM "galleries" WHERE ("galleries"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering galleries/show
+
+ActionView::TemplateError (undefined method `created' for #<Gallery:0x2486ed8>) on line #5 of app/views/galleries/show.html.erb:
+2: 
+3: 	<h1><a href="#" rel="bookmark" title="<%=h @gallery.name %>"><%=h @gallery.name %></a></h1>
+4: 
+5: 	<div class="descr"> <%=h @gallery.created %> old = May 27th, 2009 by Editor </div>
+6: 
+7: 	<div class="entry">
+8: 
+
+    app/views/galleries/show.html.erb:5
+    app/controllers/galleries_controller.rb:18:in `show'
+
+Rendered rescues/_trace (105.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GalleriesController#show (for 127.0.0.1 at 2009-05-27 16:55:09) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mGallery Load (0.3ms)[0m   [0;1mSELECT * FROM "galleries" WHERE ("galleries"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering galleries/show
+
+ActionView::TemplateError (undefined local variable or method `dump' for #<ActionView::Base:0x24f877c>) on line #5 of app/views/galleries/show.html.erb:
+2: 
+3: 	<h1><a href="#" rel="bookmark" title="<%=h @gallery.name %>"><%=h @gallery.name %></a></h1>
+4: 
+5: 	<div class="descr"> <%=dump.gallery %> old = May 27th, 2009 by Editor </div>
+6: 
+7: 	<div class="entry">
+8: 
+
+    app/views/galleries/show.html.erb:5
+    app/controllers/galleries_controller.rb:18:in `show'
+
+Rendered rescues/_trace (45.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GalleriesController#show (for 127.0.0.1 at 2009-05-27 16:55:50) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mGallery Load (0.5ms)[0m   [0mSELECT * FROM "galleries" WHERE ("galleries"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering galleries/show
+
+ActionView::TemplateError (undefined local variable or method `gallery' for #<ActionView::Base:0x2550530>) on line #5 of app/views/galleries/show.html.erb:
+2: 
+3: 	<h1><a href="#" rel="bookmark" title="<%=h @gallery.name %>"><%=h @gallery.name %></a></h1>
+4: 
+5: 	<div class="descr"> <% y gallery %> old = May 27th, 2009 by Editor </div>
+6: 
+7: 	<div class="entry">
+8: 
+
+    app/views/galleries/show.html.erb:5
+    app/controllers/galleries_controller.rb:18:in `show'
+
+Rendered rescues/_trace (44.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GalleriesController#show (for 127.0.0.1 at 2009-05-27 16:56:03) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mGallery Load (0.5ms)[0m   [0;1mSELECT * FROM "galleries" WHERE ("galleries"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering galleries/show
+Rendered layouts/_menu (0.1ms)
+Completed in 81ms (View: 72, DB: 0) | 200 OK [http://localhost/galleries/2]
+
+
+Processing GalleriesController#show (for 127.0.0.1 at 2009-05-27 16:56:13) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mGallery Load (0.3ms)[0m   [0mSELECT * FROM "galleries" WHERE ("galleries"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering galleries/show
+Rendered layouts/_menu (0.1ms)
+Completed in 20ms (View: 13, DB: 0) | 200 OK [http://localhost/galleries/2]
+
+
+Processing GalleriesController#show (for 127.0.0.1 at 2009-05-27 16:56:24) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mGallery Load (0.4ms)[0m   [0;1mSELECT * FROM "galleries" WHERE ("galleries"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering galleries/show
+Rendered layouts/_menu (0.1ms)
+Completed in 17ms (View: 10, DB: 0) | 200 OK [http://localhost/galleries/2]
+
+
+Processing GalleriesController#show (for 127.0.0.1 at 2009-05-27 16:56:34) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mGallery Load (0.4ms)[0m   [0mSELECT * FROM "galleries" WHERE ("galleries"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering galleries/show
+
+ActionView::TemplateError (undefined method `dump' for #<Gallery:0x24014a4>) on line #5 of app/views/galleries/show.html.erb:
+2: 
+3: 	<h1><a href="#" rel="bookmark" title="<%=h @gallery.name %>"><%=h @gallery.name %></a></h1>
+4: 
+5: 	<div class="descr"> <% puts @gallery.dump %> old = May 27th, 2009 by Editor </div>
+6: 
+7: 	<div class="entry">
+8: 
+
+    app/views/galleries/show.html.erb:5
+    app/controllers/galleries_controller.rb:18:in `show'
+
+Rendered rescues/_trace (98.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GalleriesController#show (for 127.0.0.1 at 2009-05-27 16:57:56) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mGallery Load (0.3ms)[0m   [0;1mSELECT * FROM "galleries" WHERE ("galleries"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering galleries/show
+Rendered layouts/_menu (0.1ms)
+Completed in 21ms (View: 13, DB: 0) | 200 OK [http://localhost/galleries/2]
+
+
+Processing GalleriesController#show (for 127.0.0.1 at 2009-05-27 16:58:23) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mGallery Load (0.4ms)[0m   [0mSELECT * FROM "galleries" WHERE ("galleries"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering galleries/show
+
+ActionView::TemplateError (undefined method `pp' for #<ActionView::Base:0x23c72cc>) on line #5 of app/views/galleries/show.html.erb:
+2: 
+3: 	<h1><a href="#" rel="bookmark" title="<%=h @gallery.name %>"><%=h @gallery.name %></a></h1>
+4: 
+5: 	<div class="descr"> <% pp @gallery %> old = May 27th, 2009 by Editor </div>
+6: 
+7: 	<div class="entry">
+8: 
+
+    app/views/galleries/show.html.erb:5
+    app/controllers/galleries_controller.rb:18:in `show'
+
+Rendered rescues/_trace (44.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GalleriesController#show (for 127.0.0.1 at 2009-05-27 16:59:18) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mGallery Load (0.4ms)[0m   [0;1mSELECT * FROM "galleries" WHERE ("galleries"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering galleries/show
+
+ActionView::TemplateError (undefined method `pp' for #<ActionView::Base:0x2419ab8>) on line #5 of app/views/galleries/show.html.erb:
+2: 
+3: 	<h1><a href="#" rel="bookmark" title="<%=h @gallery.name %>"><%=h @gallery.name %></a></h1>
+4: 
+5: 	<div class="descr"> <% pp @gallery %> old = May 27th, 2009 by Editor </div>
+6: 
+7: 	<div class="entry">
+8: 
+
+    app/views/galleries/show.html.erb:5
+    app/controllers/galleries_controller.rb:18:in `show'
+
+Rendered rescues/_trace (106.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GalleriesController#show (for 127.0.0.1 at 2009-05-27 16:59:37) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mGallery Load (0.5ms)[0m   [0;1mSELECT * FROM "galleries" WHERE ("galleries"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering galleries/show
+Rendered layouts/_menu (1.0ms)
+Completed in 43ms (View: 33, DB: 0) | 200 OK [http://localhost/galleries/2]
+
+
+Processing GalleriesController#show (for 127.0.0.1 at 2009-05-27 17:00:46) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mGallery Load (0.4ms)[0m   [0mSELECT * FROM "galleries" WHERE ("galleries"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering galleries/show
+Rendered layouts/_menu (0.2ms)
+Completed in 19ms (View: 12, DB: 0) | 200 OK [http://localhost/galleries/2]
+
+
+Processing GalleriesController#show (for 127.0.0.1 at 2009-05-27 17:01:10) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mGallery Load (0.5ms)[0m   [0;1mSELECT * FROM "galleries" WHERE ("galleries"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering galleries/show
+Rendered layouts/_menu (0.1ms)
+Completed in 71ms (View: 64, DB: 1) | 200 OK [http://localhost/galleries/2]
+
+
+Processing GalleriesController#show (for 127.0.0.1 at 2009-05-27 17:01:24) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mGallery Load (0.3ms)[0m   [0mSELECT * FROM "galleries" WHERE ("galleries"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering galleries/show
+Rendered layouts/_menu (0.1ms)
+Completed in 20ms (View: 13, DB: 0) | 200 OK [http://localhost/galleries/2]
+
+
+Processing GalleriesController#show (for 127.0.0.1 at 2009-05-27 17:02:29) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mGallery Load (0.3ms)[0m   [0;1mSELECT * FROM "galleries" WHERE ("galleries"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering galleries/show
+Rendered layouts/_menu (0.3ms)
+Completed in 13ms (View: 6, DB: 0) | 200 OK [http://localhost/galleries/2]
+
+
+Processing GalleriesController#show (for 127.0.0.1 at 2009-05-27 17:04:22) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mGallery Load (0.5ms)[0m   [0mSELECT * FROM "galleries" WHERE ("galleries"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering galleries/show
+Rendered layouts/_menu (0.1ms)
+Completed in 175ms (View: 168, DB: 1) | 200 OK [http://localhost/galleries/2]
+
+
+Processing GalleriesController#show (for 127.0.0.1 at 2009-05-27 17:06:58) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mGallery Load (0.3ms)[0m   [0;1mSELECT * FROM "galleries" WHERE ("galleries"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering galleries/show
+
+ActionView::TemplateError (undefined method `createdat' for Wed May 27 19:43:47 UTC 2009:Time) on line #5 of app/views/galleries/show.html.erb:
+2: 
+3: 	<h1><a href="#" rel="bookmark" title="<%=h @gallery.name %>"><%=h @gallery.name %></a></h1>
+4: 
+5: 	<div class="descr"><%= @gallery.created_at.createdat.tos(:long) %></div>
+6: 
+7: 	<div class="entry">
+8: 
+
+    app/views/galleries/show.html.erb:5
+    app/controllers/galleries_controller.rb:18:in `show'
+
+Rendered rescues/_trace (49.2ms)
+Rendered rescues/_request_and_response (1.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GalleriesController#show (for 127.0.0.1 at 2009-05-27 17:07:17) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mGallery Load (0.4ms)[0m   [0mSELECT * FROM "galleries" WHERE ("galleries"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering galleries/show
+
+ActionView::TemplateError (undefined method `tos' for Wed May 27 19:43:47 UTC 2009:Time) on line #5 of app/views/galleries/show.html.erb:
+2: 
+3: 	<h1><a href="#" rel="bookmark" title="<%=h @gallery.name %>"><%=h @gallery.name %></a></h1>
+4: 
+5: 	<div class="descr"><%= @gallery.created_at.tos(:long) %></div>
+6: 
+7: 	<div class="entry">
+8: 
+
+    app/views/galleries/show.html.erb:5
+    app/controllers/galleries_controller.rb:18:in `show'
+
+Rendered rescues/_trace (46.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GalleriesController#show (for 127.0.0.1 at 2009-05-27 17:08:29) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mGallery Load (0.3ms)[0m   [0;1mSELECT * FROM "galleries" WHERE ("galleries"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering galleries/show
+Rendered layouts/_menu (0.1ms)
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://localhost/galleries/2]
+
+
+Processing GalleriesController#show (for 127.0.0.1 at 2009-05-27 17:08:41) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mGallery Load (0.4ms)[0m   [0mSELECT * FROM "galleries" WHERE ("galleries"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering galleries/show
+Rendered layouts/_menu (0.1ms)
+Completed in 19ms (View: 10, DB: 0) | 200 OK [http://localhost/galleries/2]
