@@ -1832,3 +1832,12 @@ Rendering template within layouts/application
 Rendering artists/index
 Rendered layouts/_menu (0.1ms)
 Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/artists]
+
+
+Processing ArtistsController#show (for 127.0.0.1 at 2009-05-27 20:03:10) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mArtist Load (0.5ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering artists/show
+Rendered layouts/_menu (0.2ms)
+Completed in 18ms (View: 11, DB: 0) | 200 OK [http://localhost/artists/1]
