@@ -1841,3 +1841,673 @@ Rendering template within layouts/application
 Rendering artists/show
 Rendered layouts/_menu (0.2ms)
 Completed in 18ms (View: 11, DB: 0) | 200 OK [http://localhost/artists/1]
+  [4;36;1mSQL (1.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateGalleries (20090502195801)
+Migrating to CreateArtists (20090502195950)
+Migrating to CreateMuseums (20090527230147)
+Migrating to ChangeDescriptionToText (20090527233316)
+Migrating to AddAttachmentsPhotoToArtist (20090528004035)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (28.0ms)[0m   [0mALTER TABLE "artists" ADD "photo_file_name" varchar(255)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mALTER TABLE "artists" ADD "photo_content_type" varchar(255)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mALTER TABLE "artists" ADD "photo_file_size" integer[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mALTER TABLE "artists" ADD "photo_updated_at" datetime[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090528004035')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("artists")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("galleries")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("museums")[0m
+
+
+Processing ArtistsController#show (for 127.0.0.1 at 2009-05-27 20:45:20) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `has_attached_file' for #<Class:0x22bc3c8>):
+  app/models/artist.rb:3
+  app/controllers/artists_controller.rb:16:in `show'
+
+Rendered rescues/_trace (107.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArtistsController#show (for 127.0.0.1 at 2009-05-27 20:46:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArtist Load (0.5ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering artists/show
+Rendered layouts/_menu (1.0ms)
+Completed in 41ms (View: 32, DB: 0) | 200 OK [http://localhost/artists/1]
+
+
+Processing ArtistsController#show (for 127.0.0.1 at 2009-05-27 20:46:47) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mArtist Load (0.5ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering artists/show
+Rendered layouts/_menu (0.1ms)
+Completed in 14ms (View: 4, DB: 0) | 200 OK [http://localhost/artists/1]
+
+
+Processing ArtistsController#index (for 127.0.0.1 at 2009-05-27 20:46:54) [GET]
+  [4;36;1mArtist Load (0.8ms)[0m   [0;1mSELECT * FROM "artists" [0m
+Rendering template within layouts/application
+Rendering artists/index
+Rendered layouts/_menu (0.1ms)
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://localhost/artists]
+
+
+Processing ArtistsController#edit (for 127.0.0.1 at 2009-05-27 20:47:02) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mArtist Load (0.5ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering artists/edit
+Rendered layouts/_menu (0.1ms)
+Completed in 22ms (View: 13, DB: 1) | 200 OK [http://localhost/artists/1/edit]
+
+
+Processing ArtistsController#index (for 127.0.0.1 at 2009-05-27 20:47:14) [GET]
+  [4;36;1mArtist Load (0.7ms)[0m   [0;1mSELECT * FROM "artists" [0m
+Rendering template within layouts/application
+Rendering artists/index
+Rendered layouts/_menu (0.1ms)
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/artists]
+
+
+Processing ArtistsController#show (for 127.0.0.1 at 2009-05-27 20:47:18) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mArtist Load (0.5ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering artists/show
+Rendered layouts/_menu (0.1ms)
+Completed in 12ms (View: 4, DB: 0) | 200 OK [http://localhost/artists/1]
+
+
+Processing ArtistsController#show (for 127.0.0.1 at 2009-05-27 20:53:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArtist Load (0.4ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering artists/show
+Rendered layouts/_menu (0.1ms)
+Completed in 14ms (View: 5, DB: 0) | 200 OK [http://localhost/artists/1]
+
+
+Processing ArtistsController#edit (for 127.0.0.1 at 2009-05-27 20:53:53) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mArtist Load (0.4ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering artists/edit
+Rendered layouts/_menu (0.1ms)
+Completed in 20ms (View: 12, DB: 0) | 200 OK [http://localhost/artists/1/edit]
+
+
+Processing ArtistsController#update (for 127.0.0.1 at 2009-05-27 20:54:49) [PUT]
+  Parameters: {"artist"=>{"photo"=>#<File:/tmp/RackMultipart.81905.1>, "city"=>"miami", "phone"=>"555-222-2343", "bio"=>"photographer in miami", "first_name"=>"Onajide", "last_name"=>"", "state"=>"fl", "email"=>"editor@miamiartexchange.com", "middle_name"=>""}, "commit"=>"Update", "authenticity_token"=>"JEthlcJMLn2cm/xbqSmtBNpetsd1oxXwXaQ9IbzCRbc=", "id"=>"1"}
+  [4;36;1mArtist Load (0.5ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 1) [0m
+  [4;35;1mArtist Update (0.6ms)[0m   [0mUPDATE "artists" SET "photo_content_type" = 'image/png', "photo_file_name" = 'rails_ok.png', "photo_updated_at" = '2009-05-28 00:54:49', "photo_file_size" = 4565, "updated_at" = '2009-05-28 00:54:49' WHERE "id" = 1[0m
+[paperclip] Saving attachments.
+[paperclip] saving /Users/pkruger/Sites/github.com/miamiphp/maex_rails/public/system/photos/1/original/rails_ok.png
+Redirected to http://localhost:3000/artists/1
+Completed in 272ms (DB: 1) | 302 Found [http://localhost/artists/1]
+
+
+Processing ArtistsController#show (for 127.0.0.1 at 2009-05-27 20:54:50) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArtist Load (0.4ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering artists/show
+Rendered layouts/_menu (0.3ms)
+Completed in 16ms (View: 7, DB: 0) | 200 OK [http://localhost/artists/1]
+
+
+Processing ArtistsController#show (for 127.0.0.1 at 2009-05-27 20:54:58) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mArtist Load (0.4ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering artists/show
+Rendered layouts/_menu (0.1ms)
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://localhost/artists/1]
+
+
+Processing ArtistsController#show (for 127.0.0.1 at 2009-05-27 20:58:58) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArtist Load (0.6ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering artists/show
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.photo) on line #1 of app/views/artists/show.html.erb:
+1: <%= image_tag @artists.photo.url %>
+2: 
+3: <p>
+4:   <b>First name:</b>
+
+    app/views/artists/show.html.erb:1
+    app/controllers/artists_controller.rb:18:in `show'
+
+Rendered rescues/_trace (50.9ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArtistsController#show (for 127.0.0.1 at 2009-05-27 20:59:50) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mArtist Load (0.5ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering artists/show
+Rendered layouts/_menu (0.1ms)
+Completed in 18ms (View: 8, DB: 0) | 200 OK [http://localhost/artists/1]
+
+
+Processing ArtistsController#edit (for 127.0.0.1 at 2009-05-27 21:01:23) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArtist Load (0.4ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering artists/edit
+Rendered layouts/_menu (0.1ms)
+Completed in 15ms (View: 7, DB: 0) | 200 OK [http://localhost/artists/1/edit]
+
+
+Processing ArtistsController#edit (for 127.0.0.1 at 2009-05-27 21:09:40) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mArtist Load (0.6ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering artists/edit
+Rendered layouts/_menu (0.1ms)
+Completed in 91ms (View: 79, DB: 1) | 200 OK [http://localhost/artists/1/edit]
+
+
+Processing ArtistsController#edit (for 127.0.0.1 at 2009-05-27 21:12:13) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArtist Load (0.5ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering artists/edit
+Rendered layouts/_menu (0.1ms)
+Completed in 22ms (View: 12, DB: 1) | 200 OK [http://localhost/artists/1/edit]
+
+
+Processing ArtistsController#update (for 127.0.0.1 at 2009-05-27 21:12:42) [PUT]
+  Parameters: {"artist"=>{"photo"=>#<File:/tmp/RackMultipart.81905.1>, "city"=>"miami", "phone"=>"555-222-2343", "bio"=>"photographer in miami", "first_name"=>"Onajide", "last_name"=>"", "state"=>"fl", "email"=>"editor@miamiartexchange.com", "middle_name"=>""}, "commit"=>"Update", "authenticity_token"=>"JEthlcJMLn2cm/xbqSmtBNpetsd1oxXwXaQ9IbzCRbc=", "id"=>"1"}
+  [4;35;1mArtist Load (0.4ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 1) [0m
+  [4;36;1mArtist Update (0.4ms)[0m   [0;1mUPDATE "artists" SET "photo_file_name" = 'rails_fail.png', "photo_updated_at" = '2009-05-28 01:12:42', "photo_file_size" = 4528, "updated_at" = '2009-05-28 01:12:42' WHERE "id" = 1[0m
+[paperclip] Saving attachments.
+[paperclip] deleting /Users/pkruger/Sites/github.com/miamiphp/maex_rails/public/system/photos/1/original/rails_ok.png
+[paperclip] saving /Users/pkruger/Sites/github.com/miamiphp/maex_rails/public/system/photos/1/original/rails_fail.png
+Redirected to http://localhost:3000/artists/1
+Completed in 23ms (DB: 1) | 302 Found [http://localhost/artists/1]
+
+
+Processing ArtistsController#show (for 127.0.0.1 at 2009-05-27 21:12:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mArtist Load (0.5ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering artists/show
+Rendered layouts/_menu (0.1ms)
+Completed in 17ms (View: 9, DB: 0) | 200 OK [http://localhost/artists/1]
+
+
+Processing ArtistsController#edit (for 127.0.0.1 at 2009-05-27 21:12:47) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArtist Load (0.5ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering artists/edit
+Rendered layouts/_menu (0.1ms)
+Completed in 15ms (View: 7, DB: 0) | 200 OK [http://localhost/artists/1/edit]
+
+
+Processing ArtistsController#update (for 127.0.0.1 at 2009-05-27 21:14:33) [PUT]
+  Parameters: {"artist"=>{"photo"=>#<File:/tmp/RackMultipart.81905.3>, "city"=>"miami", "phone"=>"555-222-2343", "bio"=>"photographer in miami", "first_name"=>"Onajide", "last_name"=>"", "state"=>"fl", "email"=>"editor@miamiartexchange.com", "middle_name"=>""}, "commit"=>"Update", "authenticity_token"=>"JEthlcJMLn2cm/xbqSmtBNpetsd1oxXwXaQ9IbzCRbc=", "id"=>"1"}
+  [4;35;1mArtist Load (0.4ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 1) [0m
+  [4;36;1mArtist Update (0.5ms)[0m   [0;1mUPDATE "artists" SET "photo_content_type" = 'image/jpeg', "photo_file_name" = 'img20090422_014v2-3.jpg', "photo_updated_at" = '2009-05-28 01:14:33', "photo_file_size" = 69580, "updated_at" = '2009-05-28 01:14:33' WHERE "id" = 1[0m
+[paperclip] Saving attachments.
+[paperclip] deleting /Users/pkruger/Sites/github.com/miamiphp/maex_rails/public/system/photos/1/original/rails_fail.png
+[paperclip] saving /Users/pkruger/Sites/github.com/miamiphp/maex_rails/public/system/photos/1/original/img20090422_014v2-3.jpg
+Redirected to http://localhost:3000/artists/1
+Completed in 91ms (DB: 1) | 302 Found [http://localhost/artists/1]
+
+
+Processing ArtistsController#show (for 127.0.0.1 at 2009-05-27 21:14:33) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mArtist Load (0.5ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering artists/show
+Rendered layouts/_menu (0.1ms)
+Completed in 17ms (View: 8, DB: 1) | 200 OK [http://localhost/artists/1]
+
+
+Processing ArtistsController#show (for 127.0.0.1 at 2009-05-27 21:20:12) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArtist Load (0.7ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering artists/show
+Rendered layouts/_menu (0.1ms)
+Completed in 39ms (View: 10, DB: 1) | 200 OK [http://localhost/artists/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-27 21:20:12) [GET]
+  Parameters: {"1243473273"=>nil}
+
+ActionController::RoutingError (No route matches "/system/photos/1/small/img20090422_014v2-3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArtistsController#edit (for 127.0.0.1 at 2009-05-27 21:20:31) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mArtist Load (0.4ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering artists/edit
+Rendered layouts/_menu (0.1ms)
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://localhost/artists/1/edit]
+
+
+Processing ArtistsController#update (for 127.0.0.1 at 2009-05-27 21:21:11) [PUT]
+  Parameters: {"artist"=>{"photo"=>#<File:/tmp/RackMultipart.81905.1>, "city"=>"miami", "phone"=>"555-222-2343", "bio"=>"photographer in miami", "first_name"=>"Onajide", "last_name"=>"", "state"=>"fl", "email"=>"editor@miamiartexchange.com", "middle_name"=>""}, "commit"=>"Update", "authenticity_token"=>"JEthlcJMLn2cm/xbqSmtBNpetsd1oxXwXaQ9IbzCRbc=", "id"=>"1"}
+  [4;36;1mArtist Load (0.4ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 1) [0m
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: /tmp/stream.81905.0 is not recognized by the 'identify' command.>
+Rendering template within layouts/application
+Rendering artists/edit
+Rendered layouts/_menu (0.1ms)
+Completed in 128ms (View: 31, DB: 0) | 200 OK [http://localhost/artists/1]
+
+
+Processing ArtistsController#update (for 127.0.0.1 at 2009-05-27 21:30:12) [PUT]
+  Parameters: {"artist"=>{"photo"=>#<File:/tmp/RackMultipart.82299.1>, "city"=>"miami", "phone"=>"555-222-2343", "bio"=>"photographer in miami", "first_name"=>"Onajide", "last_name"=>"", "state"=>"fl", "email"=>"editor@miamiartexchange.com", "middle_name"=>""}, "commit"=>"Update", "authenticity_token"=>"JEthlcJMLn2cm/xbqSmtBNpetsd1oxXwXaQ9IbzCRbc=", "id"=>"1"}
+  [4;36;1mArtist Load (1.0ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 1) [0m
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: /tmp/stream.82299.0 is not recognized by the 'identify' command.>
+Rendering template within layouts/application
+Rendering artists/edit
+Rendered layouts/_menu (1.1ms)
+Completed in 260ms (View: 112, DB: 1) | 200 OK [http://localhost/artists/1]
+
+
+Processing ArtistsController#update (for 127.0.0.1 at 2009-05-27 21:31:00) [PUT]
+  Parameters: {"artist"=>{"photo"=>#<File:/tmp/RackMultipart.82299.3>, "city"=>"miami", "phone"=>"555-222-2343", "bio"=>"photographer in miami", "first_name"=>"Onajide", "last_name"=>"", "state"=>"fl", "email"=>"editor@miamiartexchange.com", "middle_name"=>""}, "commit"=>"Update", "authenticity_token"=>"JEthlcJMLn2cm/xbqSmtBNpetsd1oxXwXaQ9IbzCRbc=", "id"=>"1"}
+  [4;35;1mArtist Load (0.5ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 1) [0m
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: /tmp/stream.82299.1 is not recognized by the 'identify' command.>
+Rendering template within layouts/application
+Rendering artists/edit
+Rendered layouts/_menu (0.1ms)
+Completed in 57ms (View: 17, DB: 1) | 200 OK [http://localhost/artists/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-27 21:31:00) [GET]
+  Parameters: {"1243474260"=>nil}
+
+ActionController::RoutingError (No route matches "/system/photos/1/original/Picture_3.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArtistsController#update (for 127.0.0.1 at 2009-05-27 21:33:33) [PUT]
+  Parameters: {"artist"=>{"photo"=>#<File:/tmp/RackMultipart.82397.1>, "city"=>"miami", "phone"=>"555-222-2343", "bio"=>"photographer in miami", "first_name"=>"Onajide", "last_name"=>"", "state"=>"fl", "email"=>"editor@miamiartexchange.com", "middle_name"=>""}, "commit"=>"Update", "authenticity_token"=>"JEthlcJMLn2cm/xbqSmtBNpetsd1oxXwXaQ9IbzCRbc=", "id"=>"1"}
+  [4;36;1mArtist Load (0.6ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 1) [0m
+  [4;35;1mArtist Update (0.6ms)[0m   [0mUPDATE "artists" SET "photo_content_type" = 'image/png', "photo_file_name" = 'Picture_3.png', "photo_updated_at" = '2009-05-28 01:33:33', "photo_file_size" = 226448, "updated_at" = '2009-05-28 01:33:33' WHERE "id" = 1[0m
+[paperclip] Saving attachments.
+[paperclip] deleting /Users/pkruger/Sites/github.com/miamiphp/maex_rails/public/system/photos/1/original/img20090422_014v2-3.jpg
+[paperclip] saving /Users/pkruger/Sites/github.com/miamiphp/maex_rails/public/system/photos/1/small/Picture_3.png
+[paperclip] saving /Users/pkruger/Sites/github.com/miamiphp/maex_rails/public/system/photos/1/original/Picture_3.png
+Redirected to http://localhost:3000/artists/1
+Completed in 775ms (DB: 1) | 302 Found [http://localhost/artists/1]
+
+
+Processing ArtistsController#show (for 127.0.0.1 at 2009-05-27 21:33:34) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArtist Load (0.6ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering artists/show
+Rendered layouts/_menu (2.6ms)
+Completed in 44ms (View: 34, DB: 1) | 200 OK [http://localhost/artists/1]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 21:46:54) [GET]
+  [4;35;1mGallery Load (24.0ms)[0m   [0mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 46ms (View: 16, DB: 24) | 200 OK [http://localhost/]
+
+
+Processing ArtistsController#index (for 127.0.0.1 at 2009-05-27 21:47:08) [GET]
+  [4;36;1mArtist Load (0.7ms)[0m   [0;1mSELECT * FROM "artists" [0m
+Rendering template within layouts/application
+Rendering artists/index
+Rendered layouts/_menu (0.1ms)
+Completed in 19ms (View: 12, DB: 1) | 200 OK [http://localhost/artists]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-27 21:47:11) [GET]
+  [4;35;1mGallery Load (1.1ms)[0m   [0mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 13ms (View: 7, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing ArtistsController#index (for 127.0.0.1 at 2009-05-27 21:52:06) [GET]
+  [4;36;1mArtist Load (0.8ms)[0m   [0;1mSELECT * FROM "artists" [0m
+Rendering template within layouts/application
+Rendering artists/index
+Rendered layouts/_menu (0.1ms)
+Completed in 13ms (View: 7, DB: 1) | 200 OK [http://localhost/artists]
+
+
+Processing ArtistsController#new (for 127.0.0.1 at 2009-05-27 21:52:10) [GET]
+Rendering template within layouts/application
+Rendering artists/new
+Rendered layouts/_menu (0.1ms)
+Completed in 18ms (View: 10, DB: 0) | 200 OK [http://localhost/artists/new]
+
+
+Processing ArtistsController#new (for 127.0.0.1 at 2009-05-27 21:54:14) [GET]
+Rendering template within layouts/application
+Rendering artists/new
+Rendered layouts/_menu (0.1ms)
+Completed in 14ms (View: 7, DB: 0) | 200 OK [http://localhost/artists/new]
+
+
+Processing ArtistsController#new (for 127.0.0.1 at 2009-05-27 21:55:02) [GET]
+Rendering template within layouts/application
+Rendering artists/new
+Rendered layouts/_menu (0.1ms)
+Completed in 18ms (View: 11, DB: 0) | 200 OK [http://localhost/artists/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-27 21:55:02) [GET]
+
+ActionController::RoutingError (No route matches "/photos/original/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArtistsController#new (for 127.0.0.1 at 2009-05-27 21:55:58) [GET]
+Rendering template within layouts/application
+Rendering artists/new
+Rendered layouts/_menu (0.1ms)
+Completed in 21ms (View: 10, DB: 0) | 200 OK [http://localhost/artists/new]
+
+
+Processing ArtistsController#create (for 127.0.0.1 at 2009-05-27 21:59:32) [POST]
+  Parameters: {"artist"=>{"photo"=>"makeover03.jpg", "city"=>"Miami", "phone"=>"305-572-0000", "bio"=>"Born in NJ, lives and works in Miami, FL.", "first_name"=>"David", "last_name"=>"Rohn", "state"=>"Florida", "email"=>"rohndvd@bellsouth.net", "middle_name"=>""}, "commit"=>"Create", "authenticity_token"=>"JEthlcJMLn2cm/xbqSmtBNpetsd1oxXwXaQ9IbzCRbc="}
+  [4;35;1mArtist Create (0.6ms)[0m   [0mINSERT INTO "artists" ("city", "updated_at", "photo_file_name", "photo_file_size", "photo_updated_at", "photo_content_type", "phone", "first_name", "bio", "last_name", "middle_name", "email", "state", "created_at") VALUES('Miami', '2009-05-28 01:59:32', NULL, NULL, NULL, NULL, '305-572-0000', 'David', 'Born in NJ, lives and works in Miami, FL.', 'Rohn', '', 'rohndvd@bellsouth.net', 'Florida', '2009-05-28 01:59:32')[0m
+[paperclip] Saving attachments.
+Redirected to http://localhost:3000/artists/2
+Completed in 18ms (DB: 1) | 302 Found [http://localhost/artists]
+
+
+Processing ArtistsController#show (for 127.0.0.1 at 2009-05-27 21:59:32) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mArtist Load (0.4ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering artists/show
+Rendered layouts/_menu (0.1ms)
+Completed in 16ms (View: 8, DB: 0) | 200 OK [http://localhost/artists/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-27 21:59:33) [GET]
+
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArtistsController#index (for 127.0.0.1 at 2009-05-27 21:59:44) [GET]
+  [4;35;1mArtist Load (0.9ms)[0m   [0mSELECT * FROM "artists" [0m
+Rendering template within layouts/application
+Rendering artists/index
+Rendered layouts/_menu (0.1ms)
+Completed in 15ms (View: 8, DB: 1) | 200 OK [http://localhost/artists]
+
+
+Processing ArtistsController#show (for 127.0.0.1 at 2009-05-27 21:59:53) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mArtist Load (0.4ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering artists/show
+Rendered layouts/_menu (0.1ms)
+Completed in 12ms (View: 4, DB: 0) | 200 OK [http://localhost/artists/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-27 21:59:53) [GET]
+
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArtistsController#index (for 127.0.0.1 at 2009-05-27 22:00:09) [GET]
+  [4;35;1mArtist Load (1.0ms)[0m   [0mSELECT * FROM "artists" [0m
+Rendering template within layouts/application
+Rendering artists/index
+Rendered layouts/_menu (0.1ms)
+Completed in 13ms (View: 7, DB: 1) | 200 OK [http://localhost/artists]
+
+
+Processing ArtistsController#edit (for 127.0.0.1 at 2009-05-27 22:00:13) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mArtist Load (0.4ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering artists/edit
+Rendered layouts/_menu (0.1ms)
+Completed in 78ms (View: 70, DB: 0) | 200 OK [http://localhost/artists/2/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-27 22:00:13) [GET]
+
+ActionController::RoutingError (No route matches "/photos/original/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArtistsController#update (for 127.0.0.1 at 2009-05-27 22:01:03) [PUT]
+  Parameters: {"artist"=>{"photo"=>#<File:/tmp/RackMultipart.82397.2>, "city"=>"Miami", "phone"=>"305-572-0000", "bio"=>"Born in NJ, lives and works in Miami, FL.", "first_name"=>"David", "last_name"=>"Rohn", "state"=>"Florida", "email"=>"rohndvd@bellsouth.net", "middle_name"=>""}, "commit"=>"Update", "authenticity_token"=>"JEthlcJMLn2cm/xbqSmtBNpetsd1oxXwXaQ9IbzCRbc=", "id"=>"2"}
+  [4;35;1mArtist Load (0.5ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 2) [0m
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: /tmp/stream.82397.0 is not recognized by the 'identify' command.>
+Rendering template within layouts/application
+Rendering artists/edit
+Rendered layouts/_menu (0.1ms)
+Completed in 188ms (View: 15, DB: 0) | 200 OK [http://localhost/artists/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-27 22:01:03) [GET]
+  Parameters: {"1243476063"=>nil}
+
+ActionController::RoutingError (No route matches "/system/photos/2/original/baseballer.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArtistsController#update (for 127.0.0.1 at 2009-05-27 22:03:21) [PUT]
+  Parameters: {"artist"=>{"photo"=>#<File:/tmp/RackMultipart.82397.4>, "city"=>"Miami", "phone"=>"305-572-0000", "bio"=>"Born in NJ, lives and works in Miami, FL.", "first_name"=>"David", "last_name"=>"Rohn", "state"=>"Florida", "email"=>"rohndvd@bellsouth.net", "middle_name"=>""}, "commit"=>"Update", "authenticity_token"=>"JEthlcJMLn2cm/xbqSmtBNpetsd1oxXwXaQ9IbzCRbc=", "id"=>"2"}
+  [4;36;1mArtist Load (0.6ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 2) [0m
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: /tmp/stream.82397.1 is not recognized by the 'identify' command.>
+Rendering template within layouts/application
+Rendering artists/edit
+Rendered layouts/_menu (0.1ms)
+Completed in 85ms (View: 23, DB: 1) | 200 OK [http://localhost/artists/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-27 22:03:21) [GET]
+  Parameters: {"1243476201"=>nil}
+
+ActionController::RoutingError (No route matches "/system/photos/2/small/baseballer.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArtistsController#update (for 127.0.0.1 at 2009-05-27 22:03:41) [PUT]
+  Parameters: {"artist"=>{"photo"=>#<File:/tmp/RackMultipart.82397.2>, "city"=>"Miami", "phone"=>"305-572-0000", "bio"=>"Born in NJ, lives and works in Miami, FL.", "first_name"=>"David", "last_name"=>"Rohn", "state"=>"Florida", "email"=>"rohndvd@bellsouth.net", "middle_name"=>""}, "commit"=>"Update", "authenticity_token"=>"JEthlcJMLn2cm/xbqSmtBNpetsd1oxXwXaQ9IbzCRbc=", "id"=>"2"}
+  [4;35;1mArtist Load (0.7ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 2) [0m
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: /tmp/stream.82397.0 is not recognized by the 'identify' command.>
+Rendering template within layouts/application
+Rendering artists/edit
+Rendered layouts/_menu (0.1ms)
+Completed in 72ms (View: 13, DB: 1) | 200 OK [http://localhost/artists/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-27 22:03:42) [GET]
+  Parameters: {"1243476221"=>nil}
+
+ActionController::RoutingError (No route matches "/system/photos/2/small/baseballer.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArtistsController#update (for 127.0.0.1 at 2009-05-27 22:05:09) [PUT]
+  Parameters: {"artist"=>{"photo"=>#<File:/tmp/RackMultipart.82397.5>, "city"=>"Miami", "phone"=>"305-572-0000", "bio"=>"Born in NJ, lives and works in Miami, FL.", "first_name"=>"David", "last_name"=>"Rohn", "state"=>"Florida", "email"=>"rohndvd@bellsouth.net", "middle_name"=>""}, "commit"=>"Update", "authenticity_token"=>"JEthlcJMLn2cm/xbqSmtBNpetsd1oxXwXaQ9IbzCRbc=", "id"=>"2"}
+  [4;36;1mArtist Load (0.5ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 2) [0m
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: /tmp/stream.82397.2 is not recognized by the 'identify' command.>
+Rendering template within layouts/application
+Rendering artists/edit
+Rendered layouts/_menu (0.1ms)
+Completed in 62ms (View: 10, DB: 0) | 200 OK [http://localhost/artists/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-27 22:05:09) [GET]
+  Parameters: {"1243476309"=>nil}
+
+ActionController::RoutingError (No route matches "/system/photos/2/small/img20090422_014v2-3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArtistsController#update (for 127.0.0.1 at 2009-05-27 22:11:02) [PUT]
+  Parameters: {"artist"=>{"photo"=>#<File:/tmp/RackMultipart.82397.2>, "city"=>"Miami", "phone"=>"305-572-0000", "bio"=>"Born in NJ, lives and works in Miami, FL.", "first_name"=>"David", "last_name"=>"Rohn", "state"=>"Florida", "email"=>"rohndvd@bellsouth.net", "middle_name"=>""}, "commit"=>"Update", "authenticity_token"=>"JEthlcJMLn2cm/xbqSmtBNpetsd1oxXwXaQ9IbzCRbc=", "id"=>"2"}
+  [4;35;1mArtist Load (0.5ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 2) [0m
+[paperclip] An error was received while processing: #<Paperclip::NotIdentifiedByImageMagickError: /tmp/stream.82397.0 is not recognized by the 'identify' command.>
+Rendering template within layouts/application
+Rendering artists/edit
+Rendered layouts/_menu (0.1ms)
+Completed in 98ms (View: 22, DB: 0) | 200 OK [http://localhost/artists/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-27 22:11:02) [GET]
+  Parameters: {"1243476662"=>nil}
+
+ActionController::RoutingError (No route matches "/system/photos/2/original/img20090422_014v2-3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArtistsController#index (for 127.0.0.1 at 2009-05-27 22:11:11) [GET]
+  [4;36;1mArtist Load (1.2ms)[0m   [0;1mSELECT * FROM "artists" [0m
+Rendering template within layouts/application
+Rendering artists/index
+Rendered layouts/_menu (0.1ms)
+Completed in 15ms (View: 8, DB: 1) | 200 OK [http://localhost/artists]
+
+
+Processing ArtistsController#new (for 127.0.0.1 at 2009-05-27 22:11:19) [GET]
+Rendering template within layouts/application
+Rendering artists/new
+Rendered layouts/_menu (0.2ms)
+Completed in 14ms (View: 6, DB: 0) | 200 OK [http://localhost/artists/new]
+
+
+Processing ArtistsController#create (for 127.0.0.1 at 2009-05-27 22:15:16) [POST]
+  Parameters: {"artist"=>{"photo"=>"img20051023-001v2.jpg", "city"=>"Miami", "phone"=>"305-786-0000", "bio"=>"Ms. Mouse, born in a hole makes straw art.", "first_name"=>"Mary", "last_name"=>"Mouse", "state"=>"Florida", "email"=>"mouse@email.com", "middle_name"=>""}, "commit"=>"Create", "authenticity_token"=>"JEthlcJMLn2cm/xbqSmtBNpetsd1oxXwXaQ9IbzCRbc="}
+  [4;35;1mArtist Create (0.5ms)[0m   [0mINSERT INTO "artists" ("city", "updated_at", "photo_file_name", "photo_file_size", "photo_updated_at", "photo_content_type", "phone", "first_name", "bio", "last_name", "middle_name", "email", "state", "created_at") VALUES('Miami', '2009-05-28 02:15:16', NULL, NULL, NULL, NULL, '305-786-0000', 'Mary', 'Ms. Mouse, born in a hole makes straw art.', 'Mouse', '', 'mouse@email.com', 'Florida', '2009-05-28 02:15:16')[0m
+[paperclip] Saving attachments.
+Redirected to http://localhost:3000/artists/3
+Completed in 22ms (DB: 0) | 302 Found [http://localhost/artists]
+
+
+Processing ArtistsController#show (for 127.0.0.1 at 2009-05-27 22:15:16) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mArtist Load (0.6ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering artists/show
+Rendered layouts/_menu (0.1ms)
+Completed in 20ms (View: 10, DB: 1) | 200 OK [http://localhost/artists/3]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-27 22:15:17) [GET]
+
+ActionController::RoutingError (No route matches "/photos/original/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArtistsController#show (for 127.0.0.1 at 2009-05-27 22:17:05) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mArtist Load (0.5ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering artists/show
+Rendered layouts/_menu (0.1ms)
+Completed in 16ms (View: 5, DB: 0) | 200 OK [http://localhost/artists/3]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-27 22:17:06) [GET]
+
+ActionController::RoutingError (No route matches "/photos/original/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArtistsController#edit (for 127.0.0.1 at 2009-05-27 22:17:12) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mArtist Load (0.4ms)[0m   [0;1mSELECT * FROM "artists" WHERE ("artists"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering artists/edit
+Rendered layouts/_menu (0.1ms)
+Completed in 15ms (View: 7, DB: 0) | 200 OK [http://localhost/artists/3/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-27 22:17:13) [GET]
+
+ActionController::RoutingError (No route matches "/photos/original/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArtistsController#update (for 127.0.0.1 at 2009-05-27 22:17:57) [PUT]
+  Parameters: {"artist"=>{"photo"=>#<File:/tmp/RackMultipart.82397.2>, "city"=>"Miami", "phone"=>"305-786-0000", "bio"=>"Ms. Mouse, born in a hole makes straw art.", "first_name"=>"Mary", "last_name"=>"Mouse", "state"=>"Florida", "email"=>"mouse@email.com", "middle_name"=>""}, "commit"=>"Update", "authenticity_token"=>"JEthlcJMLn2cm/xbqSmtBNpetsd1oxXwXaQ9IbzCRbc=", "id"=>"3"}
+  [4;35;1mArtist Load (0.4ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 3) [0m
+  [4;36;1mArtist Update (0.5ms)[0m   [0;1mUPDATE "artists" SET "photo_content_type" = 'image/jpeg', "photo_file_name" = 'img20051023-001v2.jpg', "photo_updated_at" = '2009-05-28 02:17:57', "photo_file_size" = 122516, "updated_at" = '2009-05-28 02:17:57' WHERE "id" = 3[0m
+[paperclip] Saving attachments.
+[paperclip] saving /Users/pkruger/Sites/github.com/miamiphp/maex_rails/public/system/photos/3/original/img20051023-001v2.jpg
+Redirected to http://localhost:3000/artists/3
+Completed in 31ms (DB: 1) | 302 Found [http://localhost/artists/3]
+
+
+Processing ArtistsController#show (for 127.0.0.1 at 2009-05-27 22:17:57) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mArtist Load (0.6ms)[0m   [0mSELECT * FROM "artists" WHERE ("artists"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering artists/show
+Rendered layouts/_menu (0.1ms)
+Completed in 79ms (View: 70, DB: 1) | 200 OK [http://localhost/artists/3]
