@@ -2511,3 +2511,235 @@ Rendering template within layouts/application
 Rendering artists/show
 Rendered layouts/_menu (0.1ms)
 Completed in 79ms (View: 70, DB: 1) | 200 OK [http://localhost/artists/3]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-30 09:46:43) [GET]
+  [4;36;1mGallery Load (62.5ms)[0m   [0;1mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.3ms)
+Completed in 251ms (View: 124, DB: 63) | 200 OK [http://localhost/]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-05-30 09:46:46) [GET]
+  [4;35;1mGallery Load (1.4ms)[0m   [0mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 30ms (View: 11, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-06-06 18:38:18) [GET]
+  [4;36;1mGallery Load (8.8ms)[0m   [0;1mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (1.0ms)
+Completed in 171ms (View: 153, DB: 9) | 200 OK [http://localhost/]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-06-06 18:44:03) [GET]
+  [4;35;1mGallery Load (1.1ms)[0m   [0mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-06-06 18:46:41) [GET]
+  [4;36;1mMuseum Load (1.0ms)[0m   [0;1mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Rendered layouts/_menu (0.1ms)
+Completed in 23ms (View: 17, DB: 1) | 200 OK [http://localhost/museums]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-06-06 18:48:25) [GET]
+  [4;35;1mMuseum Load (0.8ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Rendered layouts/_menu (0.1ms)
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/museums]
+
+
+Processing ArtistsController#index (for 127.0.0.1 at 2009-06-06 18:48:48) [GET]
+  [4;36;1mArtist Load (1.1ms)[0m   [0;1mSELECT * FROM "artists" [0m
+Rendering template within layouts/application
+Rendering artists/index
+Rendered layouts/_menu (0.1ms)
+Completed in 20ms (View: 14, DB: 1) | 200 OK [http://localhost/artists]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-06-06 18:48:54) [GET]
+  [4;35;1mGallery Load (1.0ms)[0m   [0mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing ArtistsController#index (for 127.0.0.1 at 2009-06-06 18:48:59) [GET]
+  [4;36;1mArtist Load (1.2ms)[0m   [0;1mSELECT * FROM "artists" [0m
+Rendering template within layouts/application
+Rendering artists/index
+Rendered layouts/_menu (0.1ms)
+Completed in 14ms (View: 8, DB: 1) | 200 OK [http://localhost/artists]
+
+
+Processing ArtistsController#index (for 127.0.0.1 at 2009-06-06 18:50:12) [GET]
+  [4;35;1mArtist Load (1.1ms)[0m   [0mSELECT * FROM "artists" [0m
+Rendering template within layouts/application
+Rendering artists/index
+Rendered layouts/_menu (0.1ms)
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://localhost/artists]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-06-06 18:50:17) [GET]
+  [4;36;1mGallery Load (0.9ms)[0m   [0;1mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-06-06 18:50:24) [GET]
+  [4;35;1mGallery Load (1.0ms)[0m   [0mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing ArtistsController#index (for 127.0.0.1 at 2009-06-06 18:50:26) [GET]
+  [4;36;1mArtist Load (1.2ms)[0m   [0;1mSELECT * FROM "artists" [0m
+Rendering template within layouts/application
+Rendering artists/index
+Rendered layouts/_menu (0.1ms)
+Completed in 13ms (View: 7, DB: 1) | 200 OK [http://localhost/artists]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-06-06 18:50:28) [GET]
+  [4;35;1mGallery Load (0.9ms)[0m   [0mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 15ms (View: 10, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-06-06 19:34:12) [GET]
+  [4;36;1mGallery Load (0.9ms)[0m   [0;1mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ArtistsController#index (for 127.0.0.1 at 2009-06-06 19:34:15) [GET]
+  [4;35;1mArtist Load (1.1ms)[0m   [0mSELECT * FROM "artists" [0m
+Rendering template within layouts/application
+Rendering artists/index
+Rendered layouts/_menu (0.1ms)
+Completed in 13ms (View: 7, DB: 1) | 200 OK [http://localhost/artists]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-06-06 19:34:22) [GET]
+  [4;36;1mGallery Load (0.9ms)[0m   [0;1mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/galleries]
+
+
+Processing MuseumsController#index (for 127.0.0.1 at 2009-06-06 19:34:26) [GET]
+  [4;35;1mMuseum Load (0.8ms)[0m   [0mSELECT * FROM "museums" [0m
+Rendering template within layouts/application
+Rendering museums/index
+Rendered layouts/_menu (0.1ms)
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/museums]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-06-06 19:34:29) [GET]
+  [4;36;1mGallery Load (0.9ms)[0m   [0;1mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-06-06 19:34:49) [GET]
+  [4;35;1mGallery Load (1.1ms)[0m   [0mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-06-06 19:38:29) [GET]
+  [4;36;1mGallery Load (1.0ms)[0m   [0;1mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (1.1ms)
+Completed in 15ms (View: 10, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2009-06-06 19:38:43) [GET]
+  [4;35;1mArticle Load (0.0ms)[0m   [0mSQLite3::SQLException: no such table: articles: SELECT * FROM "articles" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: articles: SELECT * FROM "articles" ):
+  app/controllers/articles_controller.rb:5:in `index'
+
+Rendered rescues/_trace (97.6ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2009-06-06 20:34:16) [GET]
+  [4;36;1mArticle Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: articles: SELECT * FROM "articles" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: articles: SELECT * FROM "articles" ):
+  app/controllers/articles_controller.rb:5:in `index'
+
+Rendered rescues/_trace (39.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateGalleries (20090502195801)
+Migrating to CreateArtists (20090502195950)
+Migrating to CreateMuseums (20090527230147)
+Migrating to ChangeDescriptionToText (20090527233316)
+Migrating to AddAttachmentsPhotoToArtist (20090528004035)
+Migrating to CreateArticles (20090606233123)
+  [4;36;1mSQL (22.7ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCREATE TABLE "articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "body" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090606233123')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.7ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("articles")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("artists")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("galleries")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("museums")[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2009-06-06 20:42:48) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2009-06-06 20:45:08) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Rendered layouts/_menu (0.1ms)
+Completed in 66ms (View: 2, DB: 1) | 200 OK [http://localhost/articles]
