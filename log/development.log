@@ -1485,3 +1485,35 @@ Rendering template within layouts/application
 Rendering galleries/index
 Rendered layouts/_menu (0.1ms)
 Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-06-08 22:13:25) [GET]
+  [4;36;1mGallery Load (59.4ms)[0m   [0;1mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (14.7ms)
+Completed in 306ms (View: 217, DB: 59) | 200 OK [http://localhost/]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-06-08 22:17:09) [GET]
+  [4;35;1mGallery Load (0.8ms)[0m   [0mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 50ms (View: 28, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-06-09 00:00:09) [GET]
+  [4;36;1mGallery Load (0.8ms)[0m   [0;1mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-06-11 21:05:35) [GET]
+  [4;36;1mGallery Load (2.0ms)[0m   [0;1mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (1.4ms)
+Completed in 82ms (View: 75, DB: 2) | 200 OK [http://localhost/]
