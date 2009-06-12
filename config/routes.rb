@@ -1,4 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :articles
+
+  map.resources :museums
+
   map.resources :artists
 
   map.resources :galleries

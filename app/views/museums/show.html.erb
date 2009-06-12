@@ -1,0 +1,43 @@
+<p>
+  <b>Name:</b>
+  <%=h @museum.name %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%=h @museum.address %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%=h @museum.city %>
+</p>
+
+<p>
+  <b>County:</b>
+  <%=h @museum.county %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%=h @museum.state %>
+</p>
+
+<p>
+  <b>Zip:</b>
+  <%=h @museum.zip %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%=h @museum.phone %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @museum.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_museum_path(@museum) %> |
+<%= link_to 'Back', museums_path %>

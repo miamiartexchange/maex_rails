@@ -1,6 +1,6 @@
 <h1>Editing artist</h1>
 
-<% form_for(@artist) do |f| %>
+<% form_for @artist, :html => { :multipart => true } do |f| %>
   <%= f.error_messages %>
 
   <p>
@@ -35,6 +35,11 @@
     <%= f.label :state %><br />
     <%= f.text_field :state %>
   </p>
+	<p>
+		<%= image_tag @artist.photo.url %><br />
+
+		<%= f.file_field :photo %>
+	</p>
   <p>
     <%= f.submit 'Update' %>
   </p>
