@@ -1,0 +1,84 @@
+
+
+Processing ArtistsController#index (for 127.0.0.1 at 2009-06-11 21:56:50) [GET]
+  [4;36;1mArtist Load (1.4ms)[0m   [0;1mSELECT * FROM "artists" [0m
+Rendering template within layouts/application
+Rendering artists/index
+Rendered layouts/_menu (0.8ms)
+Completed in 56ms (View: 49, DB: 1) | 200 OK [http://localhost/artists]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-06-11 21:57:39) [GET]
+  [4;35;1mGallery Load (0.9ms)[0m   [0mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (0.1ms)
+Completed in 39ms (View: 34, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing GalleriesController#index (for 127.0.0.1 at 2009-06-11 22:46:52) [GET]
+  [4;36;1mGallery Load (0.9ms)[0m   [0;1mSELECT * FROM "galleries" [0m
+Rendering template within layouts/application
+Rendering galleries/index
+Rendered layouts/_menu (20.1ms)
+Completed in 78ms (View: 72, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2009-06-11 22:58:51) [GET]
+  [4;35;1mArticle Load (0.7ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Rendered layouts/_menu (0.1ms)
+Completed in 16ms (View: 9, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2009-06-11 23:04:17) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArticle Load (18.8ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Article with ID=1):
+  app/controllers/articles_controller.rb:16:in `show'
+
+Rendered rescues/_trace (39.8ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2009-06-11 23:04:43) [GET]
+  [4;35;1mArticle Load (2.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/application
+Rendering articles/index
+Rendered layouts/_menu (0.1ms)
+Completed in 14ms (View: 6, DB: 2) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2009-06-11 23:04:47) [GET]
+Rendering template within layouts/application
+Rendering articles/new
+Rendered layouts/_menu (0.1ms)
+Completed in 85ms (View: 79, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2009-06-11 23:05:21) [POST]
+  Parameters: {"article"=>{"body"=>"This is the first article page.", "title"=>"Open Project"}, "commit"=>"Create", "authenticity_token"=>"EzF/Bqzr0li9rLfZSXW7E6ha9odWQ8MLrrnMn7nkL0Y="}
+  [4;36;1mArticle Create (36.0ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2009-06-12 03:05:21', 'Open Project', 'This is the first article page.', '2009-06-12 03:05:21')[0m
+Redirected to http://localhost:3000/articles/1
+Completed in 75ms (DB: 36) | 302 Found [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2009-06-11 23:05:21) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering articles/show
+Rendered layouts/_menu (0.1ms)
+Completed in 58ms (View: 42, DB: 0) | 200 OK [http://localhost/articles/1]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2009-06-11 23:05:31) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering articles/show
+Rendered layouts/_menu (0.1ms)
+Completed in 17ms (View: 2, DB: 0) | 200 OK [http://localhost/]

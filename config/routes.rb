@@ -7,7 +7,9 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :artists
 
   map.resources :galleries
-  map.root :galleries
+  
+  map.root :controller => 'articles', :action => 'show', :id => '1'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
 
